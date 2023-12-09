@@ -1,0 +1,41 @@
+.project{
+   display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+
+
+}
+.title{ 
+    margin-top: -8px;
+    text-align: center;
+    color: rgb(0, 85, 160);
+    text-shadow: 2px 2px 2px black;
+    font-size: 50px;
+ }
+.projectCard{
+  margin: 20px;
+  width: 45%;
+
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.projectCard  video{
+  border-radius: 10px;
+  width: 100%;
+ 
+}
+.projectCard iframe{
+  width: 100%;
+  height: 400px;
+ 
+}
+
+.des{
+    padding: 20px;
+}
+.link{
+ display :flex;
+  justify-content: space-evenly;
+   margin-top:-20px;
+}
