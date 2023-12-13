@@ -3,9 +3,15 @@
     /* color: blue; */
 }
 .container2{
+   /* display: grid;
+  justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); */
+ 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+ 
+   /* i want minimum 2 card per row or maximum according to screen but max width should be 150px only  */
 }
 
 fieldset{
@@ -13,15 +19,16 @@ fieldset{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
 }
 .card{
+    flex: 1 1 110px; /* Minimum width of 150px, can grow but won't shrink */
+    max-width: 130px; /* Maximum width of 150px */
     padding: 10px;
     border-radius: 10px;
-    width: 170px;
-    margin: 30px;
+    margin: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     text-align: center;
 }
 .card img{
  border-radius: 10px;
  width: 100%;
- height: 160px;
+ height: 120px;
 }

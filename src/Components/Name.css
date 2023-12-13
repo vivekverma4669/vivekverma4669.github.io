@@ -1,5 +1,5 @@
 .box10>span{
-    font-size: 28px;
+    font-size: 1.5rem;
 }
 .box1 {
     width: 100%;
@@ -13,15 +13,12 @@
     -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(231, 15, 15, 0.2));
     font-size: 35px;
 }
-
 .box10 span {
     display: inline-block;
     animation: box10 2s infinite;
     animation-delay: calc(.1s * var(--i));
     color: black;
 }
-
-
 @keyframes box10 {
     0%,40%,100% {
         transform: translateY(0)
@@ -33,7 +30,7 @@
 
 .box11{
     display: flex;
-    margin-top: 50px;
+    margin-top: 50 px;
 }
 
 .box111{
@@ -51,7 +48,7 @@
     max-width: 60%;
 }
 .wlcm_note{
-    font-size: 24px;
+    font-size: 35px;
     margin-bottom: 20px;
 }
 
@@ -88,3 +85,12 @@
 .some_about{
     color: rgb(0, 85, 169);
 }
+@media screen and (min-width: 0px )and (max-device-width: 768px){
+    .box112{
+        background-color: #001C55;
+        display: none;
+    }
+    .box111{
+        width: 100%;
+    }
+  }

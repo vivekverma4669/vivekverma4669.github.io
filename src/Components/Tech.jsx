@@ -3,7 +3,7 @@ const Tech = () => {
     return (
       <>
     
-    <h1 className='techS' style={{textAlign:"center",  color:" rgb(0, 85, 169)",  textShadow :"2px 2px 2px black", fontSize:"50px", marginBottom:"-40px" }}><ul>Tech Stack</ul></h1>
+    <h1 className='techS' id='techS' style={{textAlign:"center",  color:" rgb(0, 85, 169)",  textShadow :"2px 2px 2px black", fontSize:"50px", marginBottom:"-40px" }}><ul>Tech Stack</ul></h1>
   
 
        <fieldset>
@@ -23,6 +23,7 @@ const Tech = () => {
         <div className='card'><img src="https://seeklogo.com/images/P/passport-logo-16D89B2F37-seeklogo.com.png"/> <h3>Passport Auth</h3></div>
         </div>
         </fieldset>
+
 
 
         <fieldset>
