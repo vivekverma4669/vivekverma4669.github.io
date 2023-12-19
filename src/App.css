@@ -1,19 +1,15 @@
 .App {
   text-align: center;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 a{
   text-decoration: none;
 }
 ::-webkit-scrollbar {
   display: none;
 }
-
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;

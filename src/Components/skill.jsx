@@ -4,8 +4,9 @@ import './project.css';
 
 const SkillsSection = () => {
   return (
+    <div id='skill'>
     <div className="box4 reveal" id="box4">
-  <div className="container" id='skills'>
+  <div className="container" >
     <div className="box41">
       <h1 style={{ textAlign: "center", color: "rgb(0, 85, 169)", textShadow: "2px 2px 2px black", fontSize: "50px", borderRadius:"12px" }}>My Skills</h1>
     </div>
@@ -29,6 +30,8 @@ const SkillsSection = () => {
         <p>A data structure is a named location that can be used to store and organize data. And, an algorithm is a collection of steps to solve a particular problem. Learning data structures and algorithms allow us to write efficient and optimized computer programs.</p>
       </div>
 
+
+      
       {/* <div>
         <i className="fa-solid fa-face-smile"></i>
         <h2>Communication Effectiveness</h2>
@@ -36,6 +39,17 @@ const SkillsSection = () => {
       </div> */}
     </div>
   </div>
+  
+</div>
+<div className="github_stat" style={{ margin: "auto", width:"90%", gap:"15px", marginBottom: "20px" ,display:"flex", flexWrap:"wrap" , justifyContent:"space-around"}}>
+    <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=vivekverma4669" alt="GitHub Streak Stats" />
+
+    <img  id="github-top-langs"  src="https://github-readme-stats.vercel.app/api/top-langs/?username=vivekverma4669&layout=compact" alt="Top Languages" />
+  
+    <img  id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=vivekverma4669&show_icons=true" alt="GitHub Stats Card" />
+</div>
+
+
 </div>
 
   );

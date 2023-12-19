@@ -3,6 +3,12 @@ import './nav.css';
 // import logo from './ Images/logo1.png'
 
 const NavBar = () => {
+
+
+function changeTheme(){
+alert("i am working on it using context  API")
+}
+
   return (
     <section className="top-nav"  id="nav-menu">
 {/* 
@@ -22,14 +28,15 @@ const NavBar = () => {
         <li className="tdn"><a href="#about"> About</a> </li>
         <li className="tdn"><a href="#techS"> Tech Stack </a></li> 
         <li className="tdn"><a href='#projects'> Project </a></li>
-        <li className="tdn"> <a href="#skills">My Skills </a></li>
+        <li className="tdn"> <a href="#skill">My Skills </a></li>
         <li className="tdn"><a href="#contact">Contact </a></li>
         <li className="tdn"><a href="#home" >Resume </a></li>
         </ul>
         
 
   <div style={{}}>
-     <img src="https://www.svgrepo.com/show/285294/moon-night.svg" style={{width:"50px",  marginRight:"30px", backgroundColor:"" } } />
+     <img onClick={changeTheme} src="https://www.svgrepo.com/show/285294/moon-night.svg" style={{width:"50px",  marginRight:"30px", backgroundColor:"" } } />
+
      </div>
     </section>
   );

@@ -10,13 +10,13 @@ const About = () => {
 
   return (
     <>
-    <h1  style={{textAlign:"center",  color:" rgb(0, 85, 169)",  textShadow :"2px 2px 2px black", fontSize:"50px", }}><ul>About me </ul></h1>
+    <h1 id="about"  className='about section' style={{textAlign:"center",  color:" rgb(0, 85, 169)",  textShadow :"2px 2px 2px black", fontSize:"50px", }}><ul>About me </ul></h1>
     <div className="box0 reveal" id="box0">
-      <div id="about" className='about section'>
+      <div >
         <div className="container">
           <div className="row">
             <div className="about-col-1">
-              <img className='home-img' src="https://i.ibb.co/wRn0MSB/Vivek-in-formal-shirt-black-face-black-hair-3.jpg" alt="Vivek-in-formal-shirt-black-face-black-hair-3" />
+              <img className='home-img' src="https://i.ibb.co/qd3Xn3x/Whats-App-Image-2023-09-13-at-13-39-31.jpg" alt="Vivek-in-formal-shirt-black-face-black-hair-3" />
             </div>
             <div className="about-col-2">
               <p>

@@ -2,14 +2,11 @@ import React from 'react';
 import './Name.css';
 import Resume from './Videos/VivekVerma-FullStackWebDeveloper-H3Oc.pdf';
 
-
-
-
 const Box1 = () => {
   return (
-    <div className="box1" id="box1" >
+    <div className="box1" id='box1'>
 
-      <div className="box10"  id="home">
+      <div className="box10"   id="home" >
         <span style={{'--i': 1}}><h1>i'</h1></span>
         <span style={{'--i': 2}}><h1>m</h1></span>
         <span style={{'--i': 10}}>&nbsp;</span>

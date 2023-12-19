@@ -25,7 +25,6 @@ const Tech = () => {
         </fieldset>
 
 
-
         <fieldset>
        <legend> <h2 style={{textAlign:"center",  color:" rgb(0, 85, 169)",  textShadow :"2px 2px 2px black" ,fontSize:"50px"  }} className='stack'>Tools </h2></legend>
         <div className="container2">
