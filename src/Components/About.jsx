@@ -16,10 +16,10 @@ const About = () => {
         <div className="container">
           <div className="row">
             <div className="about-col-1">
-              <img className='home-img' src="https://i.ibb.co/qd3Xn3x/Whats-App-Image-2023-09-13-at-13-39-31.jpg" alt="Vivek-in-formal-shirt-black-face-black-hair-3" />
+              <img className='home-img' src="https://i.ibb.co/qd3Xn3x/Whats-App-Image-2023-09-13-at-13-39-31.jpg" alt="Vivek-in-formal-shirt-black-face-black-hair-3" loading='lazy'/>
             </div>
             <div className="about-col-2">
-              <p>
+              <p id="user-detail-intro">
               I am  passionate and aspiring Full Stack Developer on a journey to transform ideas into seamless digital experiences. Although my professional journey is just beginning, my enthusiasm for creating innovative and efficient solutions knows no bounds.
               </p>
               <div className="tab-title">

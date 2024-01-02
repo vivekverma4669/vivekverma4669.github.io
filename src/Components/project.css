@@ -5,7 +5,7 @@
   grid-template-columns: repeat(auto-fill, minmax(550px,1fr));
 
 }
-.title{ 
+.project-title{ 
     margin-top: -8px;
     text-align: center;
     color: rgb(0, 85, 160);
@@ -13,18 +13,18 @@
     /* font-size: 50px; */
  }
 
-.projectCard{
+.project-card{
   margin: 10px;
   /* width: 45%; */
   min-width: 410px;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
-.projectCard  video{
+.project-card  video{
   border-radius: 10px;
   width: 100%;
  
 }
-.projectCard iframe{
+.project-card iframe{
   width: 100%;
   height: 400px;
  
@@ -55,7 +55,7 @@
    width: 100%;
  
  }
- .projectCard{
+ .project-card{
   width: 100%;
   /* margin: 20px; */
   /* width: 45%; */

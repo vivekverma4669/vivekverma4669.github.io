@@ -1,17 +1,15 @@
 // App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import NavBar from './Components/Nav';
-import Name from './Components/Name';
-import About from './Components/About';
-import Tech from './Components/Tech';
-import Project from './Components/project';
-import Contact from './Components/contact';
+import {  Routes, Route } from 'react-router-dom';
+import NavBar from '../Components/Nav';
+import Name from '../Components/Name';
+import About from '../Components/About';
+import Tech from '../Components/Tech';
+import Project from '../Components/project';
+import Contact from '../Components/contact';
 
-function App() {
+function AllRoute() {
   return (
-    <Router>
-      <NavBar />
       <Routes>
         <Route path="/" element={<Name />} />
         <Route path="/about" element={<About />} />
@@ -19,8 +17,8 @@ function App() {
         <Route path="/project" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </Router>
+
   );
 }
 
-export default App;
+export default AllRoute;

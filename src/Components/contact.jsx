@@ -23,7 +23,7 @@ import './contact.css';
                </div>
 
                <div className="box5111">
-                 <p><i className="fa-solid fa-envelope"></i> vivekverma4679@gmail.com</p>
+                 <p id="contact-email" ><i className="fa-solid fa-envelope"></i>vivekverma4679@gmail.com</p>
                </div>
 
                <div className="box5111">
@@ -51,7 +51,7 @@ import './contact.css';
          <div className="box512">
          <img className="img51" src="https://i.ibb.co/qd3Xn3x/Whats-App-Image-2023-09-13-at-13-39-31.jpg" alt="" />
          <div className="btn_div">
-         <button className="rbtn"><a download="VivekVerma-Resume.pdf" >Resume</a></button>
+         <button className="rbtn"><a download="VivekVerma-Resume.pdf"   id="resume-button-2">Resume</a></button>
          </div>
          </div>
 

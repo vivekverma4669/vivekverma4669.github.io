@@ -1,17 +1,20 @@
 import './nav.css';
-
+import { AuthTheme } from '../AuthThemeProvider';
+import React, { useContext } from "react";
 // import logo from './ Images/logo1.png'
 
 const NavBar = () => {
+  const { toggleTheme } = useContext(AuthTheme);
+  function changeTheme() {
+    toggleTheme();
+    alert("Theme toggled (currentlly working )");
+  }
 
 
-function changeTheme(){
-alert("i am working on it using context  API")
-}
-
+    // if theme is night  to aplly black color to top nav
   return (
-    <section className="top-nav"  id="nav-menu">
-{/* 
+    <section className="top-nav"  id="nav-menu"> 
+   {/* 
       <div>
        <img src="https://i.ibb.co/q9MB4fF/logo1.png" alt="logo1" border="0" style={{width:"90px"}} />
       </div> */}
@@ -33,11 +36,10 @@ alert("i am working on it using context  API")
         <li className="tdn"><a href="#home" >Resume </a></li>
         </ul>
         
-
-  <div style={{}}>
+ <div style={{}}>
      <img onClick={changeTheme} src="https://www.svgrepo.com/show/285294/moon-night.svg" style={{width:"50px",  marginRight:"30px", backgroundColor:"" } } />
 
-     </div>
+     </div> 
     </section>
   );
 };
