@@ -27,13 +27,13 @@ const NavBar = () => {
 
 
         <ul className="menu">
-        <li className="tdn"><a href="#home">Home</a>  </li>
-        <li className="tdn"><a href="#about"> About</a> </li>
-        <li className="tdn"><a href="#techS"> Tech Stack </a></li> 
-        <li className="tdn"><a href='#projects'> Project </a></li>
-        <li className="tdn"> <a href="#skill">My Skills </a></li>
-        <li className="tdn"><a href="#contact">Contact </a></li>
-        <li className="tdn"><a href="#home" >Resume </a></li>
+        <li className="tdn"><a href="#home" className="nav-link home">Home</a></li>
+        <li className="tdn"><a href="#about" className="nav-link about">About</a></li>
+        <li className="tdn"><a href="#techS" className="nav-link skills">Tech Stack</a></li>
+        <li className="tdn"><a href='#projects' className="nav-link projects">Project</a></li>
+        <li className="tdn"><a href="#skill" className="nav-link">My Skills</a></li>
+        <li className="tdn"><a href="#contact" className="nav-link contact">Contact</a></li>
+        <li className="tdn"><a href="#home" className="nav-link resume">Resume</a></li>
         </ul>
         
  <div style={{}}>

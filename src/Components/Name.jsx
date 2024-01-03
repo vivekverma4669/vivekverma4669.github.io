@@ -36,11 +36,11 @@ const Box1 = () => {
       <div className="btn_div">
 
         <button className="rbtn"  style={{ marginLeft :"-50px", margin: "20px"}} >
-        <a download="VivekVerma-Resume.pdf" href={Resume}> Resume <img src='https://icon-library.com/images/download-icon-white-png/download-icon-white-png-22.jpg' style={{width :"30px"}}   id="resume-button-2"/></a>
+        <a download="VivekVerma-Resume.pdf" href={Resume}> Resume <img src='https://icon-library.com/images/download-icon-white-png/download-icon-white-png-22.jpg' style={{width :"30px"}}   id="resume-button-1"/></a>
         </button>
 
       <button className="rbtn">
-        <a  href={Resume} >Resume <img src='https://i.pinimg.com/originals/6a/de/d4/6aded4eedc9fdcbe8c9d8e27d82c06b3.gif' style={{width :"30px"}}  id="resume-button-2" /> </a>
+        <a  href={Resume} >Resume <img src='https://i.pinimg.com/originals/6a/de/d4/6aded4eedc9fdcbe8c9d8e27d82c06b3.gif' style={{width :"30px"}}  /> </a>
       </button>
         
      </div>
