@@ -34,7 +34,7 @@ function App() {
     <Tech/>
     <Project/>
     <SkillsSection/>
-    <Contact/>
+    {/* <Contact/>   */}
     </AuthThemeProvider>
     </BrowserRouter>
   );

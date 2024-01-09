@@ -4,19 +4,23 @@ import boat from './Videos/Boat.mp4';
 import Electron from './Videos/Electron.mp4';
 import Elogo from './Videos/eLogo.jpg'
 import port from './Videos/port.mp4'
+import { useContext } from 'react';
+import { AuthTheme } from '../AuthThemeProvider';
 
 const Project = () => {
+  const {theme} = useContext(AuthTheme);
     return (
 
-
-<>
-<h1  id='projects' style={{ textAlign: "center", color: "rgb(0, 85, 169)", textShadow: "2px 2px 2px black", fontSize: "50px", borderRadius:"12px" }}>My Projects</h1>
+<div  style={{backgroundColor : theme=='day'? null : 'rgb(16, 22,34)' , marginTop:'-33px'}} >
+<br/>
+<br/>
+<h1  id='projects'style={{textAlign:"center",  color: theme=='day'? "rgb(0, 85, 169)" : '#32de84' ,  textShadow :"2px 2px 2px black", fontSize:"50px", }}>My Projects</h1>
         
-<div className="project" >
+<div className="project"  >
          
  
 
-<div className="project-card">
+<div className="project-card"  style={{backgroundColor : theme=='day'? null : 'silver', borderRadius: '10px'}}>
   <video loop autoPlay controls>
     <source src={boat} type="video/mp4" />
     Your browser does not support the video tag.
@@ -39,7 +43,7 @@ it's a clone of an e-commerce website that is boat ,boat deals with smart life s
 </div>
 
 
-<div className="project-card">
+<div className="project-card" style={{backgroundColor : theme=='day'? null : 'silver' , borderRadius: '10px'}}>
   <video  autoPlay controls loop>
     <source src={Glosier} type="video/mp4" />
    
@@ -64,7 +68,7 @@ A beauty website and community devoted to sharing real information with real peo
 
 
 
-<div className="project-card">
+<div className="project-card"  style={{backgroundColor : theme=='day'? null : 'silver' , borderRadius: '10px'}}>
   <video loop autoPlay controls>
     <source src={Electron} type="video/mp4" />
    
@@ -87,7 +91,7 @@ It's a replica of an e-commerce platform named Electron, specializing in smart l
 </div>
 
  
-<div className="project-card">
+<div className="project-card"  style={{backgroundColor : theme=='day'? null : 'silver' , borderRadius: '10px'}}>
   <video loop autoPlay controls>
     <source src={port} type="video/mp4" />
     Your browser does not support the video tag.
@@ -110,7 +114,7 @@ It's a replica of an e-commerce platform named Electron, specializing in smart l
         
 </div>
 
-        </>
+        </div>
     )}
 
 

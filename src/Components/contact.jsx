@@ -1,45 +1,47 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './contact.css';
+import { AuthTheme } from '../AuthThemeProvider';
 
    const Contact = () => {
+    const{theme} = useContext(AuthTheme);
      return (
        <>
-         <div className="box5 reveal" id="box5" > 
+         <div className="box5 reveal" id="box5"  style={{backgroundColor : theme=='day'?  '#aaaeb0' : '#051c26' }}>  
 
          <div className="box51" id='contact'>
           
-           <h1>CONTACT</h1>
+           <h1 style={{textAlign:"center",  color: theme=='day'? "rgb(0, 85, 169)" : '#32de84' ,  textShadow :"2px 2px 2px black", fontSize:"50px", }}>CONTACT</h1>
           </div>
 
    
            <div className="box52">
 
                <div className="box511">
-                 <h1 className="box5h1">Reach Out to me!</h1>
+                 <h1 className="box5h1"  style={{color : theme=='day'? null: 'white'}}>Reach Out to me!</h1>
                
    
                <div className="box5111">
-                 <p><i className="fa-solid fa-location-dot"></i> Prayagraj, Uttar Pradesh</p>
+                 <p style={{color : theme=='day'? null: 'white'}}><i className="fa-solid fa-location-dot"></i> Prayagraj, Uttar Pradesh</p>
                </div>
 
                <div className="box5111">
-                 <p id="contact-email" ><i className="fa-solid fa-envelope"></i>vivekverma4679@gmail.com</p>
+                 <p id="contact-email" style={{color : theme=='day'? null: 'white'}} ><i className="fa-solid fa-envelope"></i>vivekverma4679@gmail.com</p>
                </div>
 
                <div className="box5111">
-                 <p><i className="fa-solid fa-phone"></i> +91-9369546165</p>
+                 <p style={{color : theme=='day'? null: 'white'}}><i className="fa-solid fa-phone"></i> +91-9369546165</p>
                </div>
 
                
    
                <div className="box5112">
-                 <div className="ico" ><a href="https://github.com/vivekverma4669" id='contact-github'> <img src='https://www.svgrepo.com/show/361181/github.svg'  style={{width:"35px"}}></img>  </a></div>
-                 <div className="ico"><a href="https://wa.me/919369546165" id="contact-phone"> <img src='https://static-00.iconduck.com/assets.00/whatsapp-icon-2038x2048-5zk5gj1j.png'  style={{width:"35px"}}></img></a></div>
-                 <div className="ico"><a href="https://www.linkedin.com/in/vivek-verma-594700228/" id='contact-linkedin'><img src='https://www.svgrepo.com/show/108614/linkedin.svg'  style={{width:"35px"}}></img></a></div>
+                 <div className="ico" ><a href="https://github.com/vivekverma4669" id='contact-github'> <img src='https://www.svgrepo.com/show/361181/github.svg'  style={{width:"35px"  , filter: theme=='day'? null : "invert(100%)"}}></img>  </a></div>
+                 <div className="ico"><a href="https://wa.me/919369546165" id="contact-phone"> <img src='https://static-00.iconduck.com/assets.00/whatsapp-icon-2038x2048-5zk5gj1j.png'  style={{width:"35px" , filter: theme=='day'? null : "invert(100%)"}}></img></a></div>
+                 <div className="ico"><a href="https://www.linkedin.com/in/vivek-verma-594700228/" id='contact-linkedin'><img src='https://www.svgrepo.com/show/108614/linkedin.svg'  style={{width:"35px" ,filter: theme=='day'? null : "invert(100%)"}}></img></a></div>
                  {/* <div className="ico"><a href="https://www.linkedin.com/in/vivek-verma-594700228/" id=''><img src='https://www.svgrepo.com/show/108614/linkedin.svg'  style={{width:"35px"}}></img></a></div> */}
-                 <div className="ico"><a href="mailto:vivekverma4679@gmail.com" id='contact-email'><img src='https://www.svgrepo.com/show/1284/message.svg'  style={{width:"35px"}}></img></a></div>
-                 <div className="ico"><a href="https://www.instagram.com/vivek__.soni/"> <img src='https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/black-instagram-icon.png'  style={{width:"35px"}} ></img></a></div>
-                 <div className="ico"><a href="tel:+919369546165" id='contact-phone'><img src='https://www.iconpacks.net/icons/1/free-phone-icon-504-thumb.png'  style={{width:"35px"}}></img></a></div>
+                 <div className="ico"><a href="mailto:vivekverma4679@gmail.com" id='contact-email'><img src='https://www.svgrepo.com/show/1284/message.svg'  style={{width:"35px",filter: theme=='day'? null : "invert(100%)"}}></img></a></div>
+                 <div className="ico"><a href="https://www.instagram.com/vivek__.soni/"> <img src='https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/black-instagram-icon.png'  style={{width:"35px" , filter: theme=='day'? null : "invert(100%)"}} ></img></a></div>
+                 <div className="ico"><a href="tel:+919369546165" id='contact-phone'><img src='https://www.iconpacks.net/icons/1/free-phone-icon-504-thumb.png'  style={{width:"35px" , filter: theme=='day'? null : "invert(100%)"}}></img></a></div>
                </div>
               
              
@@ -51,14 +53,16 @@ import './contact.css';
          <div className="box512">
          <img className="img51" src="https://i.ibb.co/qd3Xn3x/Whats-App-Image-2023-09-13-at-13-39-31.jpg" alt="" />
          <div className="btn_div">
-         <button className="rbtn"><a download="VivekVerma-Resume.pdf"   id="resume-button-2">Resume</a></button>
+         <button className="rbtn" style={{backgroundColor : theme=='day'? 'black' : 'green'}}><a download="VivekVerma-Resume.pdf"   id="resume-button-2">Resume</a></button>
          </div>
          </div>
 
 </div>
+
+ 
          </div>  
         
-        
+         <h3 style={{backgroundColor :'rgb(0, 85, 169' , margin :'0px' , textAlign:' center' , color: 'white' }}>Built From Scrach by  Vivek 😎</h3>
             
        </>
      );

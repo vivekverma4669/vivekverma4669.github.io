@@ -65,7 +65,7 @@
     position: relative;
 }
 .tab-links:hover{
-    color: #72351C;
+    color: greenyellow;
 }
 .tab-links::after{
     content: '';
@@ -78,7 +78,7 @@
     transition: 0.7s; 
 }
 .active-link{
-    color: #72351C;
+    color:#32de84;
 }
 .tab-links.active-link::after{
     width: 100%;
@@ -89,10 +89,11 @@
 }
         
 .tab-contents ul li span{
-    color: #72351C;
+    color: 'white';
     font-size: 18px;
     font-weight: bold;
 }
+
 .tab-contents{
     display: none;
 }

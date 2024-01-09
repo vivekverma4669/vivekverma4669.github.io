@@ -10,7 +10,7 @@ export const AuthTheme = createContext();
     };
 
     return (
-        <AuthTheme.Provider value={{ theme, toggleTheme}}>
+         <AuthTheme.Provider value={{ theme, toggleTheme}}>
          {children}
          </AuthTheme.Provider>
     )
