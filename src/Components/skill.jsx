@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import './skil.css';
 import './project.css';
 import GitHubCalendar from 'react-github-calendar'; 
-import { ActivityCalendar } from 'activity-calendar-react';
+// import { ActivityCalendar } from 'activity-calendar-react';
 import axios from 'axios';
 import { AuthTheme } from '../AuthThemeProvider';
 
@@ -63,32 +63,28 @@ const SkillsSection = () => {
   </div>
   
 </div>
-<div className="github_stat" style={{ margin: "auto", width:"90%", gap:"15px", marginBottom: "20px" ,display:"flex", flexWrap:"wrap" , justifyContent:"space-around" , }}>
 
+
+<div className="github_stat" style={{margin: 'auto'}}>
     <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=vivekverma4669&show_icons=true&locale=en&layout=compact&theme=dracula" alt="GitHub Streak Stats" />
-    <img   src="https://github-readme-stats.vercel.app/api/top-langs?username=vivekverma4669&show_icons=true&locale=en&layout=compact&theme=dracula" alt=""/>
-    {/* <img  id="github-top-langs"  src="https://github-readme-stats.vercel.app/api/top-langs/?username=vivekverma4669&layout=compact" alt="Top Languages" /> */}
-  
-    <img  id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=vivekverma4669&show_icons=true&locale=en&layout=compact&theme=dracula" alt="GitHub Stats Card" />
+    <img  style={{minHeight :"195px"}} src="https://github-readme-stats.vercel.app/api/top-langs?username=vivekverma4669&show_icons=true&locale=en&layout=compact&theme=dracula" alt=""/>
+    <img  id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=vivekverma4669&show_icons=true&locale=en&layout=compact&theme=dracula" alt="GitHub Stats Card" /> 
 </div>
 
 
 
-              <div className="react-activity-calendar" style={{width:"70%" , margin :"auto"}}>
-
-{/* <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="30px" alt="Git"/>&nbsp;<i><b>🐱My Contributions:</b></i>  */}
+<div className="react-activity-calendar" style={{width:"80%" , margin :"auto"}}>
 
 <h2 style={{color : theme=='day'? null : "white" , textAlign: 'center'}}> My Contributions </h2>
 <p align="center">
-<img style={{width :'100%'}} src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=vivekverma4669&theme=dracula" />
+<img  className='con'   style={{width :'100%'}} src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=vivekverma4669&theme=dracula" />
 </p>
 
 
-{/* <img src='https://github-readme-activity-graph.vercel.app/graph?username=vivekverma4669&bg_color=000000&color=4fff67&line=4fff67&point=ffffff&area=true&hide_border=true' /> */}
 
-<h2 className="skills-card-name" style={{color : theme=='day'? null : "white" , textAlign: 'center'}}>GitHub Activity Calendar</h2>
-                <GitHubCalendar username="vivekverma4669" style={{width:"100%" , margin :"auto" , backgroundColor:"silver" , padding: '10px'}} />
-              </div>
+    <h2 className="skills-card-name" style={{color : theme=='day'? null : "white" , textAlign: 'center'}}>GitHub Activity Calendar</h2>
+  <GitHubCalendar username="vivekverma4669" style={{width:"100%" , margin :"auto" , backgroundColor:"silver" , padding: '10px'}} />
+</div>
   
 </div>
 

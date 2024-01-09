@@ -1,13 +1,9 @@
-.box10>span{
-    font-size: 1.5rem;
-}
 .box1 {
     width: 100%;
     text-align: center;
     margin-top: 90px;
     
 }
-
 .box10 {
     padding-top: 20px;
     -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(231, 15, 15, 0.2));
@@ -19,6 +15,9 @@
     animation-delay: calc(.1s * var(--i));
     color: black;
 }
+.box10>span{
+    font-size: 1.5rem;
+}
 @keyframes box10 {
     0%,40%,100% {
         transform: translateY(0)
@@ -28,9 +27,12 @@
     }
 }
 
+
+
+
 .box11{
     display: flex;
-    margin-top: 50 px;
+    margin-top: 50px;
 }
 
 .box111{
@@ -41,6 +43,8 @@
     padding: 40px;
     color: #001C55;
 }
+
+
 .box112{
     width: 40%;
 }
@@ -51,6 +55,7 @@
     font-size: 35px;
     margin-bottom: 20px;
 }
+
 
 .btn_div{
     width: fit-content;
@@ -65,8 +70,7 @@
     border-radius: 7px;
     box-shadow: 9px 7px 32px -11px #72351C;
     transition: all .3s ease-in-out 0s; 
-    margin-top: 20px;  
-    /* transform: rotate(-3.6deg);           */
+    margin-top: 20px;
 }
 
 .rbtn:hover{
@@ -75,9 +79,6 @@
     
 }
 
-/* .rbtn:hover, .rbtn>a:hover{
-    cursor: url(arrow/h30.png),auto;
-} */
 .rbtn>a{
     text-decoration: none;
     color: #E0E0E0; 
@@ -85,12 +86,13 @@
 .some_about{
     color: rgb(0, 85, 169);
 }
+
 @media screen and (min-width: 0px )and (max-device-width: 768px){
     .box112{
         background-color: #001C55;
         display: none;
     }
-    .box111{
-        width: 100%;
+    .box11{
+        width: 80%;
     }
   }

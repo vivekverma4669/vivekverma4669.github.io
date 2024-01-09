@@ -45,3 +45,26 @@
     transform: translateY(-10px);
 }
 
+
+
+.github_stat{
+ width:90%;
+ margin-bottom: 20px;
+ display: flex;
+ flex-wrap: wrap;
+ margin: auto;
+ gap:15px;
+ justify-content: space-around;
+
+}
+
+
+@media screen and  (max-width: 510px) {
+    
+.github_stat *{
+  width: 350px;
+}
+.con{
+    width: 350px;
+}
+}

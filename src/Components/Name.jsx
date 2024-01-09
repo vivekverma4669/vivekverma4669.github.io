@@ -9,9 +9,8 @@ const Box1 = () => {
 
 
   return (
-    <div className="box1" id='box1' style={{backgroundColor : theme=='day'? null : 'rgb(16, 22,34)', marginTop:'60px', marginBottom: '-50px' }}>
-
-      <div className="box10"   id="home" >
+    <div className="box1" id='box1' style={{backgroundColor : theme=='day'? null : 'rgb(16, 22,34)', marginTop:'60px', marginBottom: '-50px'  }}>
+     <div className="box10"   id="home"  >
         <span style={{'--i': 1 , color : theme=='day'? null : 'white' }}><h1>i'</h1></span>
         <span style={{'--i': 2 , color : theme=='day'? null : 'white' }}><h1>m</h1></span>
         <span style={{'--i': 10}}>&nbsp;</span>
@@ -30,17 +29,19 @@ const Box1 = () => {
         <span style={{'--i': 14, color: theme=='day'? 'rgb(0, 85, 169)' : 'rgb(42, 205, 216)'}}><h1>r</h1></span>
         <span style={{'--i': 15, color: theme=='day'? 'rgb(0, 85, 169)' : 'rgb(42, 205, 216)'}}><h1>m</h1></span>
         <span style={{'--i': 16, color: theme=='day'? 'rgb(0, 85, 169)' : 'rgb(42, 205, 216)'}}><h1>a</h1></span>
-      </div>
+      </div>  
 
-      <div className="box11"  >
-        <div className="box111">
 
-   <h2 className="wlcm_note" style={{color : theme=='day' ? "black" : 'white' }}>Welcome to my portfolio!</h2>
-   <h2 className="some_about" id='user-detail-intro' style={{backgroundColor : theme=='day'? null : 'rgb(16, 22,34)' , color: theme=='day'? null : 'rgb(42, 205, 216)' }}>I am a  enthusiastic <span style={{color: theme=='day'? 'black' : 'white'   ,  textShadow :"2px 2px grey" , }}>Full Stack Web Developer </span> dedicated to crafting cohesive web applications that seamlessly integrate polished front-end design with strong back-end proficiency.</h2>
+     
+  <div className="box11" >
+         <div className="box111">
+ 
+     <h2 className="wlcm_note" style={{color : theme=='day' ? "black" : 'white', marginLeft:"20px" }}>Welcome to my portfolio!</h2>
+     <h3 className="some_about" id='user-detail-intro' style={{backgroundColor : theme=='day'? null : 'rgb(16, 22,34)' , color: theme=='day'? null : 'rgb(42, 205, 216)' , marginLeft:"20px" }}>I am a  enthusiastic <span style={{color: theme=='day'? 'black' : 'white'   ,  textShadow :"2px 2px grey" }}>Full Stack Web Developer</span><br/> dedicated to crafting cohesive web applications that seamlessly integrate polished front-end design with strong back-end proficiency.</h3>
 
       <div className="btn_div">
 
-        <button className="rbtn"  style={{ marginLeft :"-50px", margin: "20px" ,backgroundColor :theme=='day'? null: "green"}} >
+        <button className="rbtn"  style={{ marginLeft :"-50px", margin: "10px" ,backgroundColor :theme=='day'? null: "green"}} >
         <a download="VivekVerma-Resume.pdf" href={Resume}> Resume <img src='https://icon-library.com/images/download-icon-white-png/download-icon-white-png-22.jpg' style={{width :"30px"}}   id="resume-button-1"/></a>
         </button>
 
@@ -49,13 +50,14 @@ const Box1 = () => {
       </button>
         
      </div>
-          
+           
         </div>
+ 
+         <div className="box112">
+         <img src="https://i.ibb.co/ph8tkQB/6865464-removebg.png" alt="side image " border="0" />
+         </div>  
 
-        <div className="box112">
-       <img src="https://i.ibb.co/ph8tkQB/6865464-removebg.png" alt="side image " border="0" />
-        </div>
-      </div>
+      </div>  
 
     </div>
   );

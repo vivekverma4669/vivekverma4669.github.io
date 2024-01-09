@@ -28,15 +28,17 @@ function App() {
     <BrowserRouter>
     <AuthThemeProvider>
     <NavBar/>
-    {/* <AllRoute/> */}
-    <Name/>
+    {/* <Name/>
     <About/>
     <Tech/>
     <Project/>
     <SkillsSection/>
-    {/* <Contact/>   */}
+    <Contact/>  
+     */}
     </AuthThemeProvider>
     </BrowserRouter>
   );
 }
 export default App;
+
+// for mobile Contact , about , tech complate 
