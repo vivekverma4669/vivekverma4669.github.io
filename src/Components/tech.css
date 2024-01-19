@@ -3,6 +3,7 @@
     /* color: blue; */
 }
 .container2{
+    margin: 39px;
    /* display: grid;
   justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); */
@@ -41,3 +42,10 @@ fieldset{
 }
 
 
+
+@media screen and (max-width: 520px) {
+    .container2{
+        margin: 0px;
+
+    }
+}

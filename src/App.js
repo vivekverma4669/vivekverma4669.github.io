@@ -28,13 +28,13 @@ function App() {
     <BrowserRouter>
     <AuthThemeProvider>
     <NavBar/>
-    {/* <Name/>
+     <Name/>
     <About/>
     <Tech/>
     <Project/>
     <SkillsSection/>
     <Contact/>  
-     */}
+     
     </AuthThemeProvider>
     </BrowserRouter>
   );

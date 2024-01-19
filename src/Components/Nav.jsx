@@ -6,7 +6,7 @@ import { AuthTheme } from '../AuthThemeProvider';
 const NavBar = () => {
   const {theme}=useContext(AuthTheme);
   return (
-    <section className="top-nav">
+    <section className="top-nav"  style={{backgroundColor :theme=='day'? "#e0e0e0": "black"}}>
 
      
 

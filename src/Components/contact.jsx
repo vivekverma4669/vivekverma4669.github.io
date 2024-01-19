@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import './contact.css';
 import { AuthTheme } from '../AuthThemeProvider';
+import Resume from './Videos/Vivek-Verma-Resume.pdf';
+
 
    const Contact = () => {
     const{theme} = useContext(AuthTheme);
@@ -51,9 +53,13 @@ import { AuthTheme } from '../AuthThemeProvider';
        
    
          <div className="box512">
-         <img className="img51" src="https://i.ibb.co/qd3Xn3x/Whats-App-Image-2023-09-13-at-13-39-31.jpg" alt="" />
+         <img className="img51" src="https://i.ibb.co/1r9Hhxs/Whats-App-Image-2024-01-17-at-20-04-51-344e3480.jpg" alt="" />
          <div className="btn_div">
-         <button className="rbtn" style={{backgroundColor : theme=='day'? 'black' : 'green'}}><a download="VivekVerma-Resume.pdf"   id="resume-button-2">Resume</a></button>
+
+         <button className="rbtn"  style={{ marginLeft :"-50px", margin: "10px" ,backgroundColor :theme=='day'? null: "green"}} >
+        <a download="Vivek-Verma-Resume" href={Resume}> Resume <img src='https://icon-library.com/images/download-icon-white-png/download-icon-white-png-22.jpg' style={{width :"30px"}}   id="resume-button-1"/></a>
+        </button>
+
          </div>
          </div>
 

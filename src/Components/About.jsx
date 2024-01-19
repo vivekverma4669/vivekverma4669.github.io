@@ -18,27 +18,27 @@ const About = () => {
         <div className="container">
           <div className="row">
             <div className="about-col-1">
-              <img className='home-img' src="https://i.ibb.co/qd3Xn3x/Whats-App-Image-2023-09-13-at-13-39-31.jpg" alt="Vivek-in-formal-shirt-black-face-black-hair-3" loading='lazy'/>
+              <img className='home-img' src="https://i.ibb.co/1r9Hhxs/Whats-App-Image-2024-01-17-at-20-04-51-344e3480.jpg" alt="Vivek" loading='lazy'/>
             </div>
             <div className="about-col-2">
               <p id="user-detail-intro" style={{color : theme=='day'? null: "white"}}>
               I am  passionate and aspiring Full Stack Developer on a journey to transform ideas into seamless digital experiences. Although my professional journey is just beginning, my enthusiasm for creating innovative and efficient solutions knows no bounds.
               </p>
               <div className="tab-title" style={{color : theme=='day'? null: "rgb(42, 205, 216)"}}>
-                <p className={`tab-links ${activeTab === 'skills' ? 'active-link' : ''}`}   onClick={() => openTab('skills')}> Technical Skills</p>
-                <p className={`tab-links ${activeTab === 'soft skills' ? 'active-link' : ''}`} onClick={() => openTab('soft skills')}>Soft Skills</p>
-                <p className={`tab-links ${activeTab === 'education' ? 'active-link' : ''}`} onClick={() => openTab('education')}>Education</p>
+                <p className={`tab-links ${activeTab === 'skills' ? 'active-link' : ''}`}   style={{color: theme=='day'? 'black' :null}} onClick={() => openTab('skills')}> Technical Skills</p>
+                <p className={`tab-links ${activeTab === 'soft skills' ? 'active-link' : ''}`}   style={{color: theme=='day'? 'black' :null}} onClick={() => openTab('soft skills')}>Soft Skills</p>
+                <p className={`tab-links ${activeTab === 'education' ? 'active-link' : ''}`}  style={{color: theme=='day'? 'black' :null}} onClick={() => openTab('education')}>Education</p>
               </div>
 
               <div className={`tab-contents ${activeTab === 'skills' ? 'active-tab' : ''}`} id="skills">
               <ul class="aboutSkill">   
-                                <li><span style={{color : theme=='day'? null: "#32de84"}}>Frontend Development</span><br/><p style={{color :theme=='day'? "black" : "white"}}><span >HTML5 </span><span >| CSS3 </span> <span >| JavaScript</span> <span >|React</span><span >|Redux </span> </p></li>
-                                <li><span style={{color : theme=='day'? null: "#32de84"}}>Full Stack Development</span><br/><p style={{color :theme=='day'? "black" : "white"}}><span >HTML5 </span><span >| CSS3 </span> <span >| JavaScript</span> <span >|React </span> <span >|Mongol DB </span> <span >|Node.js </span></p></li>
-                                <li><span style={{color : theme=='day'? null: "#32de84"}}>Data Structure & Algorithms</span><br/><p style={{color :theme=='day'? "black" : "white"}}><span >Arrays/Strings </span><span >| Stacks/Queues </span><span >| Linked List </span><span >| Recursion</span></p></li>
+                                <li><span style={{color : theme=='day'? null: "#32de84"}}>Frontend Development</span><br/><p style={{color :theme=='day'? "black" : "white"}}><span >HTML5 </span><span >| CSS3 </span> <span >| JavaScript</span> <br></br><span >|React</span><span >|Redux </span> </p></li>
+                                <li><span style={{color : theme=='day'? null: "#32de84"}}>Full Stack Development</span><br/><p style={{color :theme=='day'? "black" : "white"}}><span >HTML5 </span><span >| CSS3 </span> <span >| JavaScript</span> <span >|React </span><br></br><span >|Redux </span> <span >|Mongol DB </span> <span >|Node.js </span></p></li>
+                                <li><span style={{color : theme=='day'? null: "#32de84"}}>Data Structure & Algorithms</span><br/><p style={{color :theme=='day'? "black" : "white"}}><span >Arrays/Strings </span><span >| Stacks/Queues </span><span >| Linked List </span><span >| DP </span> <span >| Back tracking  </span>  <span >| Tree  | binary tree  </span></p></li>
                             </ul>
               </div>
 
-              <div className={`tab-contents ${activeTab === 'soft skills' ? 'active-tab' : ''}`} id="soft skills">
+              <div className={`tab-contents ${activeTab === 'soft skills' ? 'active-tab' : ''}`}  id="soft skills">
               <ul class="aboutSkill">
                                 <li><span style={{color : theme=='day'? null: "#32de84"}} >Self-learning</span><br/> <p style={{color :theme=='day'? "black" : "white"}}><span >Having the skill of self-learning can greatly benefit a developer at their workplace.</span></p></li>
                                 {/* <li><span>Time management</span><br/><span >Being time-conscious can help a developer meet deadlines and give exact estimates.</span></li> */}
