@@ -3,6 +3,11 @@
     /* background-color: #E0E0E0; */
     padding: 30px;
 }
+body{
+
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    /* font-family: emoji; */
+}
 
 .box01{
     width: fit-content;
@@ -389,3 +394,10 @@ color: #001C55;
 .menu>li{
 font-weight: bold;
 }
+/* 
+.home-img{
+    opacity: 0;
+}
+.home-img .animate__animated{
+    opacity: 1;
+} */

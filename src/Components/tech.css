@@ -30,8 +30,9 @@ fieldset{
 }
 
 .card:hover {
-    background-color: #ddd; 
+    /* background-color: #ddd;  */
     border: 1px solid crimson;
+    /* box-shadow: ; */
     cursor: pointer;
 }
   

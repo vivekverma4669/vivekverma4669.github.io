@@ -1,35 +1,25 @@
-import './nav.css';
-import { AuthTheme } from '../AuthThemeProvider';
-import React, { useContext } from "react";
-import DarkMode from './DarkMode/DarkMode'
-// import logo from './ Images/logo1.png'
+import React, { useState } from "react";
+import "./nav.css";
+import { Link } from "react-router-dom";
+import { useContext } from "react";
+import DarkMode from './DarkMode/DarkMode';
+import { AuthTheme } from "../AuthThemeProvider";
 
-const NavBar = () => {
-  const {theme, toggleTheme } = useContext(AuthTheme);
+ const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const {theme} = useContext(AuthTheme);
 
-   function changeTheme() {
-    toggleTheme();
-    console.log(theme);
-    // alert("Theme toggled (currentlly working )");
-   }
+   
+  return ( 
+    <nav  style={{backgroundColor:  theme=='day'? "" :'#141718'}}>
+     
+      <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-
-
-    // if theme is night  to aplly black color to top nav
-  return (
-    <section className="top-nav"  id="nav-menu"  style={{backgroundColor : theme=='day'? null : "black" }}> 
-  
-      
-       {/* <img src="https://i.ibb.co/q9MB4fF/logo1.png" alt="logo1" border="0" style={{width:"90px"}} /> */}
-      
-
-      <input id="menu-toggle" type="checkbox"  />
-      <label className='menu-button-container' htmlFor="menu-toggle">
-      <div className='menu-button'  style={{backgroundColor:'red'}}></div>
-      </label>
-
-
-        <ul className="menu">
+      <ul className={menuOpen ? "open" : ""}>
         <li className="tdn"><a style={{color : theme=='day'? null :'white'}} href="#home" className="nav-link home">Home</a></li>
         <li className="tdn"><a style={{color : theme=='day'? null :'white'}} href="#about" className="nav-link about">About</a></li>
         <li className="tdn"><a style={{color : theme=='day'? null :'white'}} href="#techS" className="nav-link skills">Tech Stack</a></li>
@@ -37,15 +27,14 @@ const NavBar = () => {
         <li className="tdn"><a style={{color : theme=='day'? null :'white'}} href="#skill" className="nav-link">My Skills</a></li>
         <li className="tdn"><a style={{color : theme=='day'? null :'white'}} href="#contact" className="nav-link contact">Contact</a></li>
         <li className="tdn"><a style={{color : theme=='day'? null :'white'}} href="#home" className="nav-link resume">Resume</a></li>
-        </ul>
-        
- <div  style={{width:"50px",  marginRight:"60px" } }>
-    <DarkMode  />
-</div> 
+      </ul>
 
-</section>
+      
+      <div className="title">
+      <DarkMode />
+      </div>
+      
+    </nav>
   );
 };
-
-
-export default NavBar;
+ export default Navbar;

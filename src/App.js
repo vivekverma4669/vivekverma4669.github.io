@@ -10,31 +10,22 @@ import AuthThemeProvider from './AuthThemeProvider';
 import { BrowserRouter } from 'react-router-dom';
 import AllRoute from './Routes/AllRoutes';
 
+
 function App() {
   return (
-    // <BrowserRouter>
-    // <AuthThemeProvider>
-    // <NavBar/>
-    // <Name/>
-    // <About/>
-    // <Tech/>
-    // <Project/>
-    // <SkillsSection/>
-    // <Contact/>
-    // </AuthThemeProvider>
-    // </BrowserRouter>
+    
 
 
     <BrowserRouter>
     <AuthThemeProvider>
-    <NavBar/>
+   
+     <NavBar/>
      <Name/>
     <About/>
     <Tech/>
     <Project/>
     <SkillsSection/>
     <Contact/>   
-     
     </AuthThemeProvider>
     </BrowserRouter>
   );

@@ -12,6 +12,11 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
    
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+   
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
     
     <title>port-follio vivek</title>
   </head>
@@ -19,5 +24,33 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     
+
   </body>
+
+
+  
+
 </html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+
+
+//   var waypoint = new Waypoint({
+//   element: document.getElementById('px-offset-waypoint'),
+//   handler: function(direction) {
+//     notify('I am 20px from the top of the window')
+//   },
+//   offset: 20 
+// });
+
+$(document).ready(()=>{
+
+  $('.home-img').waypoint((direction)=>{
+     $('.home-img').addClass('animate__animated animate__bounce')
+  },{
+    offset: '400px',
+  });
+
+});
+
+</script>
