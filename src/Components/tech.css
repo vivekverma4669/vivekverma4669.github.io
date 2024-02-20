@@ -4,6 +4,7 @@
 }
 .container2{
     margin: 39px;
+    margin-top: 10px;
    /* display: grid;
   justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); */
@@ -16,17 +17,24 @@
 }
 
 fieldset{
+    /* padding-top: -50px; */
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
     background-color: rgb(228, 236, 237);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
 }
 .card{
     flex: 1 1 110px; /* Minimum width of 150px, can grow but won't shrink */
-    max-width: 130px; /* Maximum width of 150px */
-    padding: 10px;
+    max-width: 90px; /* Maximum width of 150px */
+    padding: 8px;
     border-radius: 10px;
     margin: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     text-align: center;
+}
+.card h3{
+    font-size: 12px;
 }
 
 .card:hover {
@@ -39,7 +47,7 @@ fieldset{
 .card img{
  border-radius: 10px;
  width: 100%;
- height: 120px;
+ height: 80px;
 }
 
 

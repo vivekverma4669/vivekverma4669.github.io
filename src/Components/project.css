@@ -57,7 +57,7 @@
  
  }
  .project-card{
-  width: 350px;
+  width: 300px;
   /* margin: 20px; */
   /* width: 45%; */
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -250,3 +250,36 @@
         width: 350px;
     }
     }
+
+    .project-card1{
+        display: flex;
+    }
+   
+    .project-tech-stack{
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    /* border: 2px solid black; */
+
+    margin: auto;
+    }
+    .project-tech-stack  :hover{
+     border-radius: 10px;
+     background-color: rgb(3, 50, 98);
+    }
+
+
+    .project-tech-stack img{
+        padding: 5px;
+     /* border: 2px solid black; */
+     width: 30px;
+    
+     /* margin: 0 0 0 30px; */
+     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    }
+    
+
+
+
+    
