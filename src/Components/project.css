@@ -268,7 +268,7 @@
      background-color: rgb(3, 50, 98);
     }
 
-
+ 
     .project-tech-stack img{
         padding: 5px;
      /* border: 2px solid black; */
@@ -279,7 +279,16 @@
 
     }
     
-
+.project-card {
+   border: 1px solid rgb(0, 208, 255);
+   border-radius: 5px;
+}
+    
+.project-card video {
+   border: 1px solid rgb(0, 208, 255);
+   border-radius: 5px;
+}
 
 
     
+
