@@ -47,7 +47,7 @@ const Box1 = () => {
 
  <button className="rbtn" style={{backgroundColor :theme=='day'? null: "green"}}>
  
- <a  href="https://drive.google.com/file/d/1N3rt6XM6606hJsm-M2YxNISjr5OCUo0S/view?usp=sharing" target="blank" > 
+ <a  href="https://drive.google.com/file/d/1KVd729nDnEHlfSUqq3skvNR5BPVlEH7F/view?usp=sharing" target="blank" > 
  Resume <img src='https://i.pinimg.com/originals/6a/de/d4/6aded4eedc9fdcbe8c9d8e27d82c06b3.gif' style={{width :"30px"}}  /> 
  </a>
       </button>

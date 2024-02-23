@@ -37,13 +37,22 @@ fieldset{
     font-size: 12px;
 }
 
-.card:hover {
-    /* background-color: #ddd;  */
-    border: 1px solid crimson;
-    /* box-shadow: ; */
-    cursor: pointer;
+.card {
+    /* border: 1px solid transparent; */
+    transition: border 1s; /* Apply transition to the border property */
 }
-  
+.card:hover {
+    
+    border: 1px solid crimson; 
+    /* background-color: rgb(128, 152, 154); */
+    cursor: pointer; 
+    color: white;
+    box-shadow: rgba(21, 132, 230, 0.25) 0px 50px 100px -20px, rgba(25, 126, 194, 0.3) 0px 30px 60px -30px, rgba(37, 124, 212, 0.35) 0px -2px 6px 0px inset;
+}
+.card h3:hover{
+    color: aliceblue;
+}
+
 .card img{
  border-radius: 10px;
  width: 100%;
