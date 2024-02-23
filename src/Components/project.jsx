@@ -30,8 +30,8 @@ const Project = () => {
   </video>
 <div className='des'>
 <div className='link' style={{color : theme=='day'? '' : 'silver'}}>
- <a style={{color : theme=='day'? '' : 'whitesmoke'}}  className="project-deployed-link" href='https://leo-blog-nw15zs41q-vivek-vermas-projects.vercel.app/login' ><h2>🌐preview </h2></a>
- <a  style={{color : theme=='day'? '' : 'whitesmoke'}} className="project-github-link" href='https://github.com/vivekverma4669/blog-app'> <h2><img src='https://cdn-icons-png.flaticon.com/512/25/25231.png'  style={{filter : theme=='day'? 'inherit' : "invert()" , width:"20PX" , width: '20px'}}/> Github</h2></a>
+ <a style={{color : theme=='day'? '' : 'whitesmoke'}}  className="project-deployed-link" href='https://leo-blog-nw15zs41q-vivek-vermas-projects.vercel.app/login' target="blank" ><h2>🌐preview </h2></a>
+ <a  style={{color : theme=='day'? '' : 'whitesmoke'}} className="project-github-link" href='https://github.com/vivekverma4669/blog-app' target="blank" > <h2><img src='https://cdn-icons-png.flaticon.com/512/25/25231.png'  style={{filter : theme=='day'? 'inherit' : "invert()" , width:"20PX" , width: '20px'}}/> Github</h2></a>
 </div>
 
 <h2 className='project-title' style={{color : theme=='day'? '' : 'limegreen' , display :'flex', width :'fit-content' , margin :'auto'}}> <img style={{width:"50px", marginRight:"20px" }} src="https://static.vecteezy.com/system/resources/thumbnails/024/553/534/small/lion-head-logo-mascot-wildlife-animal-illustration-generative-ai-png.png"/>(Leo Bloogers)</h2>
@@ -65,8 +65,8 @@ Blog app Using MERN Stack , Leo Bloggers is a dynamic platform empowering users 
   </video>
 <div className='des'>
 <div className='link'>
- <a  style={{color : theme=='day'? '' : 'whitesmoke'}}  className="project-deployed-link" href='https://sugar-steel.vercel.app/' ><h2>🌐preview </h2></a>
- <a  style={{color : theme=='day'? '' : 'whitesmoke'}} className="project-github-link" href='https://github.com/vivekverma4669/sugar_clone'> <h2><img src='https://cdn-icons-png.flaticon.com/512/25/25231.png'  style={{filter : theme=='day'? 'inherit' : "invert()" , width:"20PX" , width: '20px'}}/> Github</h2></a>
+ <a  style={{color : theme=='day'? '' : 'whitesmoke'}}  className="project-deployed-link" href='https://sugar-steel.vercel.app/' target="blank" ><h2>🌐preview </h2></a>
+ <a  style={{color : theme=='day'? '' : 'whitesmoke'}} className="project-github-link" href='https://github.com/vivekverma4669/sugar_clone' target="blank"> <h2><img src='https://cdn-icons-png.flaticon.com/512/25/25231.png'  style={{filter : theme=='day'? 'inherit' : "invert()" , width:"20PX" , width: '20px'}}/> Github</h2></a>
 </div>
 
 <h2 className='project-title' style={{color : theme=='day'? '' : 'limegreen' , display :'flex' , margin:'auto',  width: 'fit-content',}}> <img style={{width:"100px" ,    filter : theme== 'day'? 'inherit' : 'invert()' , marginTop :'-10px'}} src="https://1000logos.net/wp-content/uploads/2021/05/SUGAR-Cosmetics-logo.png" />(Sugar Cosmetics)</h2>
@@ -99,8 +99,8 @@ Sugar Cosmetics is a popular beauty brand known for its diverse range of cruelty
   </video>
 <div className='des'>
 <div className='link'>
-<a style={{color : theme=='day'? '' : 'whitesmoke'}}  className="project-deployed-link"  href='https://delightful-phoenix-888d86.netlify.app/'><h2>🌐preview</h2></a>
- <a  style={{color : theme=='day'? '' : 'whitesmoke'}} className="project-github-link" href='https://github.com/Saurav9284/Unite-5-Project-Female-Beauty-Product-'><h2><img src='https://cdn-icons-png.flaticon.com/512/25/25231.png' style={{filter : theme=='day'? 'inherit' : "invert()" , width: '20px'}}/> Github</h2></a>
+<a style={{color : theme=='day'? '' : 'whitesmoke'}}  className="project-deployed-link"  href='https://delightful-phoenix-888d86.netlify.app/' target="blank" ><h2>🌐preview</h2></a>
+ <a  style={{color : theme=='day'? '' : 'whitesmoke'}} className="project-github-link" href='https://github.com/Saurav9284/Unite-5-Project-Female-Beauty-Product-'  target="blank"><h2><img src='https://cdn-icons-png.flaticon.com/512/25/25231.png' style={{filter : theme=='day'? 'inherit' : "invert()" , width: '20px'}}/> Github</h2></a>
 </div>
 
 <h2 className='project-title' style={{color : theme=='day'? '' : 'limegreen'}}> <img style={{width:"90px", marginRight:"20px" ,  filter : theme== 'day'? 'inherit' : 'invert()'}} src="https://cdn.worldvectorlogo.com/logos/glossier-1.svg"/>(Glossier Clone)</h2>
@@ -138,8 +138,8 @@ A beauty website and community devoted to sharing real information with real peo
   </video>
 <div className='des'>
 <div className='link'>
- <a  style={{color : theme=='day'? '' : 'whitesmoke'}} className="project-deployed-link" href='https://64dcee8acb8ee428e7b63db9--charming-bienenstitch-d89c77.netlify.app/'><h2>🌐preview</h2></a>
- <a style={{color : theme=='day'? '' : 'whitesmoke'}} className="project-github-link" href='https://github.com/RajshreeJaiswal/Electron-ecommerce-website'><h2><img  style={{filter : theme=='day'? 'inherit' : "invert()" , width:"20PX" , width: '20px'}} src='https://cdn-icons-png.flaticon.com/512/25/25231.png'/> Github</h2></a>
+ <a  style={{color : theme=='day'? '' : 'whitesmoke'}} className="project-deployed-link" href='https://64dcee8acb8ee428e7b63db9--charming-bienenstitch-d89c77.netlify.app/'  target="blank"><h2>🌐preview</h2></a>
+ <a style={{color : theme=='day'? '' : 'whitesmoke'}} className="project-github-link" href='https://github.com/RajshreeJaiswal/Electron-ecommerce-website'  target="blank"><h2><img  style={{filter : theme=='day'? 'inherit' : "invert()" , width:"20PX" , width: '20px'}} src='https://cdn-icons-png.flaticon.com/512/25/25231.png'/> Github</h2></a>
 </div>
 
 <h2 className='project-title'  style={{color : theme=='day'? '' : 'limegreen'}}> <img style={{width:"90px", marginRight:"20px"}} src={Elogo}/>(Electron)</h2>
@@ -171,8 +171,8 @@ I've created the  ProductDetails page and Product page .
   </video>
 <div className='des'>
 <div className='link'>
- <a  style={{color : theme=='day'? '' : 'whitesmoke'}} className="project-deployed-link" href='https://64b52a5f1165af0f63d1969a--elaborate-paprenjak-06f23e.netlify.app/' ><h2>🌐preview </h2></a>
- <a style={{color : theme=='day'? '' : 'whitesmoke'}} className="project-github-link" href='https://github.com/vivekverma4669/boat_project_group_7?tab=readme-ov-file'> <h2><img src='https://cdn-icons-png.flaticon.com/512/25/25231.png'  style={{filter : theme=='day'? 'inherit' : "invert()" , width:"20PX" , width: '20px'}}/> Github</h2></a>
+ <a  style={{color : theme=='day'? '' : 'whitesmoke'}} className="project-deployed-link" href='https://64b52a5f1165af0f63d1969a--elaborate-paprenjak-06f23e.netlify.app/' target="blank" ><h2>🌐preview </h2></a>
+ <a style={{color : theme=='day'? '' : 'whitesmoke'}} className="project-github-link" href='https://github.com/vivekverma4669/boat_project_group_7?tab=readme-ov-file'  target="blank"> <h2><img src='https://cdn-icons-png.flaticon.com/512/25/25231.png'  style={{filter : theme=='day'? 'inherit' : "invert()" , width:"20PX" , width: '20px'}}/> Github</h2></a>
 </div>
 
 <h2 className='project-title' style={{color : theme=='day'? '' : 'limegreen'}}> <img style={{width:"70px", marginRight:"20px" ,  filter : theme== 'day'? 'inherit' : 'invert()'}} src="https://seeklogo.com/images/B/boat-logo-F99CE766FA-seeklogo.com.png"/>(BOAT clone)</h2>
@@ -204,8 +204,8 @@ it's a clone of an e-commerce website that is boat ,boat deals with smart life s
   </video>
 <div className='des' >
 <div className='link'>
- <a  style={{color : theme=='day'? '' : 'whitesmoke'}} className="project-deployed-link" href='https://vivekverma4669.github.io'> <h2>🌐preview</h2></a>
-<a   style={{color : theme=='day'? '' : 'whitesmoke'}} className="project-github-link" href='https://github.com/vivekverma4669/vivekverma4669.github.io'><h2><img src='https://cdn-icons-png.flaticon.com/512/25/25231.png'   style={{filter : theme=='day'? 'inherit' : "invert()" , width:"20PX"}}/> Github</h2></a>
+ <a  style={{color : theme=='day'? '' : 'whitesmoke'}} className="project-deployed-link" href='https://vivekverma4669.github.io'  target="blank"> <h2>🌐preview</h2></a>
+<a   style={{color : theme=='day'? '' : 'whitesmoke'}} className="project-github-link" href='https://github.com/vivekverma4669/vivekverma4669.github.io'  target="blank"><h2><img src='https://cdn-icons-png.flaticon.com/512/25/25231.png'   style={{filter : theme=='day'? 'inherit' : "invert()" , width:"20PX"}}/> Github</h2></a>
 </div>
 
 <h2 className='project-title' style={{color : theme=='day'? '' : 'limegreen'}}> My portfolio</h2>
