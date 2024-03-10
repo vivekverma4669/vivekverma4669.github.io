@@ -226,6 +226,9 @@ it's a clone of an e-commerce website that is boat ,boat deals with smart life s
 </div>
         
 </div>
+{
+
+}
 
 
  </div>

@@ -15,11 +15,13 @@ const Tech = () => {
         <div className='card'><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/768px-CSS3_logo.svg.png?20210705212817p"/> <h3 style={{color : theme=='day'? 'black' : 'white'}}>CSS</h3></div>
         <div className='card'><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/768px-Unofficial_JavaScript_logo_2.svg.png?20141107110902"/> <h3 style={{color : theme=='day'? 'black' : 'white'}}>Java Script</h3></div>
         <div className='card'><img src="https://cdn.worldvectorlogo.com/logos/react-1.svg"/> <h3 style={{color : theme=='day'? 'black' : 'white'}}>React</h3></div>
+        <div className='card'><img src="https://w7.pngwing.com/pngs/915/519/png-transparent-typescript-hd-logo-thumbnail.png"/> <h3 style={{color : theme=='day'? 'black' : 'white'}}>Type Script</h3></div>
+        <div className='card'><img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" style={{filter : theme=='day'? 'inherit' : "invert()" }}/> <h3 style={{color : theme=='day'? 'black' : 'white'}}>Next js</h3></div>
         <div className='card'><img src="https://seeklogo.com/images/J/java-logo-7F8B35BAB3-seeklogo.com.png"/> <h3 style={{color : theme=='day'? 'black' : 'white' , }}>Java</h3></div>
         <div className='card'><img src="https://www.svgrepo.com/show/439231/mongodb.svg"/> <h3 style={{color : theme=='day'? 'black' : 'white'}}>Mongol DB</h3></div>
         <div className='card'><img src="https://cdn-icons-png.flaticon.com/512/919/919825.png"/> <h3 style={{color : theme=='day'? 'black' : 'white'}}>Node js</h3></div>
         <div className='card'><img src="https://youteam.io/blog/wp-content/uploads/2022/04/expressjs_logo.png"/> <h3  style={{color : theme=='day'? 'black' : 'white'  }}>Express js</h3></div>
-        <div className='card'><img src="https://cdn.iconscout.com/icon/free/png-256/free-redux-3629610-3032308.png"/> <h3 style={{color : theme=='day'? 'black' : 'white'}}>Redux</h3></div>
+        <div className='card'><img src="https://cdn.iconscout.com/icon/free/png-256/free-redux-3629610-3032308.png"  style={{filter : theme=='day'? 'inherit' : "invert()"}}/> <h3 style={{color : theme=='day'? 'black' : 'white'  }}>Redux</h3></div>
         <div className='card'><img src="https://brandlogos.net/wp-content/uploads/2021/09/bootstrap-logo.png"/> <h3 style={{color : theme=='day'? 'black' : 'white'}}>Boot strap</h3></div>
         <div className='card'><img src="https://www.svgrepo.com/show/354262/react-router.svg"/> <h3 style={{color : theme=='day'? 'black' : 'white'}}>Rauter</h3></div>
         <div className='card'><img src="https://seeklogo.com/images/P/passport-logo-16D89B2F37-seeklogo.com.png"/> <h3 style={{color : theme=='day'? 'black' : 'white'}}>Passport</h3></div>
