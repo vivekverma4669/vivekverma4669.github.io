@@ -29,7 +29,7 @@ const Box1 = () => {
         <span style={{'--i': 14, color: theme=='day'? 'rgb(0, 85, 169)' : 'rgb(42, 205, 216)'}}><h1>r</h1></span>
         <span style={{'--i': 15, color: theme=='day'? 'rgb(0, 85, 169)' : 'rgb(42, 205, 216)'}}><h1>m</h1></span>
         <span style={{'--i': 16, color: theme=='day'? 'rgb(0, 85, 169)' : 'rgb(42, 205, 216)'}}><h1>a</h1></span>
-      </div>  
+  </div>  
 
 
      

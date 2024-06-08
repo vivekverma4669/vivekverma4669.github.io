@@ -9,16 +9,19 @@
     -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(231, 15, 15, 0.2));
     font-size: 35px;
 }
+
+
 .box10 span {
     display: inline-block;
     animation: box10 2s infinite;
     animation-delay: calc(.1s * var(--i));
     color: black;
 }
+
 .box10>span{
-    font-size: 1.5rem;
+    font-size: 1.5rem; 
 }
-@keyframes box10 {
+@keyframes box10{
     0%,40%,100% {
         transform: translateY(0)
     }
@@ -42,7 +45,7 @@
     text-align: left;
     padding: 40px;
     color: #001C55;
-}
+} 
 
 
 .box112{
