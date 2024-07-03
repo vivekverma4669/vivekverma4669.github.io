@@ -65,7 +65,7 @@ Blog app Using MERN Stack , Leo Bloggers is a dynamic platform empowering users 
   </video>
 <div className='des'>
 <div className='link'>
- <a  style={{color : theme=='day'? '' : 'whitesmoke'}}  className="project-deployed-link" href='https://sugar-steel.vercel.app/' target="blank" ><h2>🌐preview </h2></a>
+ <a  style={{color : theme=='day'? '' : 'whitesmoke'}}  className="project-deployed-link" href='https://sugar-clone-liard.vercel.app/' target="blank" ><h2>🌐preview </h2></a>
  <a  style={{color : theme=='day'? '' : 'whitesmoke'}} className="project-github-link" href='https://github.com/vivekverma4669/sugar_clone' target="blank"> <h2><img src='https://cdn-icons-png.flaticon.com/512/25/25231.png'  style={{filter : theme=='day'? 'inherit' : "invert()" , width:"20PX" , width: '20px'}}/> Github</h2></a>
 </div>
 
