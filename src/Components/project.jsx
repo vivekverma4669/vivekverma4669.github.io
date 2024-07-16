@@ -1,11 +1,13 @@
 import './project.css';
 import Glosier from './Videos/glossier.mp4';
-import boat from './Videos/Boat.mp4';
+import chat from './Videos/chat.mp4';
 import Electron from './Videos/Electron.mp4';
 import Elogo from './Videos/eLogo.jpg'
 import port from './Videos/port.mp4';
 import Leo from './Videos/Leo.mp4';
 import Sugar from './Videos/Sugar.mp4';
+import chess from './Videos/chess.mp4';
+import boat from './Videos/Boat.mp4'
 import { useContext } from 'react';
 import { AuthTheme } from '../AuthThemeProvider';
 
@@ -92,6 +94,69 @@ Sugar Cosmetics is a popular beauty brand known for its diverse range of cruelty
 </div>
 
 
+<div className="project-card"  style={{backgroundColor : theme=='day'? null : 'rgb(18, 32, 32)' , borderRadius: '10px' }}>
+  <video loop autoPlay controls >
+    <source src={chat} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+<div className='des'>
+<div className='link'>
+ <a  style={{color : theme=='day'? '' : 'whitesmoke'}} className="project-deployed-link"  href='https://chat-app-mern-wheat.vercel.app/login' target="blank" ><h2>🌐preview </h2></a>
+ <a style={{color : theme=='day'? '' : 'whitesmoke'}} className="project-github-link" href='https://github.com/vivekverma4669/chat-app-mern'  target="blank"> <h2><img src='https://cdn-icons-png.flaticon.com/512/25/25231.png'  style={{filter : theme=='day'? 'inherit' : "invert()" , width:"20PX" , width: '20px'}}/> Github</h2></a>
+</div>
+
+<h2 className='project-title' style={{color : theme=='day'? '' : 'limegreen'}}>MERN Chat App</h2>
+<h4 style={{color : theme=='day'? 'rgb(0, 85, 160)' : 'limegreen'}}className="project-description">
+it's a chat real time chat app , I archive  this using socket.io in this  you can share all type of files , video and photo and you can see the when user join and messege timeing and for more detail please visit web
+</h4>
+<div className="project-tech-stack">
+
+<img src='https://cdn.worldvectorlogo.com/logos/react-1.svg'/>
+  <img src='https://cdn.iconscout.com/icon/free/png-256/free-redux-3629610-3032308.png' style={{filter : theme=='day'? 'inherit' : "invert()" }}/>
+  <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/768px-Unofficial_JavaScript_logo_2.svg.png?20141107110902'  />
+  <img src='https://www.svgrepo.com/show/439231/mongodb.svg'/>
+  <img src='https://youteam.io/blog/wp-content/uploads/2022/04/expressjs_logo.png' style={{filter : theme=='day'? 'inherit' : "invert()" }}/>
+  <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/768px-CSS3_logo.svg.png?20210705212817p'/> 
+  <img src='https://mui.com/static/logo.png'/> 
+</div>
+
+<h2 style={{textAlign :'center'}}> <span style={{color: theme=='day'? 'rgb(0, 85, 160)' : 'limegreen'}}>Solo Project  <img src='https://static.thenounproject.com/png/4311433-200.png' width="20px"   style={{filter : theme=='day'? 'inherit' : "invert()" , width:"20PX"}}/></span></h2>
+</div>
+</div>
+
+
+<div className="project-card"  style={{backgroundColor : theme=='day'? null : 'rgb(18, 32, 32)' , borderRadius: '10px' }}>
+  <video loop autoPlay controls >
+    <source src={chess} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  
+<div className='des'>
+<div className='link'>
+ <a  style={{color : theme=='day'? '' : 'whitesmoke'}} className="project-deployed-link"  href='https://anti-chess-chi.vercel.app/' target="blank" ><h2>🌐preview </h2></a>
+ <a style={{color : theme=='day'? '' : 'whitesmoke'}} className="project-github-link" href='https://github.com/vivekverma4669/anti-chess'  target="blank"> <h2><img src='https://cdn-icons-png.flaticon.com/512/25/25231.png'  style={{filter : theme=='day'? 'inherit' : "invert()" , width:"20PX" , width: '20px'}}/> Github</h2></a>
+</div>
+
+<h2 className='project-title' style={{color : theme=='day'? '' : 'limegreen'}}>Anti Chess Game</h2>
+<h4 style={{color : theme=='day'? 'rgb(0, 85, 160)' : 'limegreen'}}className="project-description">
+In Anti-chess, the objective is to lose all your pieces or get stalemated, with capturing being mandatory whenever possible. There are no checks or checkmates, and the king is treated like any other piece.
+</h4>
+
+<div className="project-tech-stack">
+
+  <img src='https://cdn.worldvectorlogo.com/logos/react-1.svg'/>
+  <img src='https://cdn.iconscout.com/icon/free/png-256/free-redux-3629610-3032308.png' style={{filter : theme=='day'? 'inherit' : "invert()" }}/>
+  <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/768px-Unofficial_JavaScript_logo_2.svg.png?20141107110902'  />
+  <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/768px-CSS3_logo.svg.png?20210705212817p'/> 
+</div>
+
+<h2 style={{textAlign :'center'}}> <span style={{color: theme=='day'? 'rgb(0, 85, 160)' : 'limegreen'}}>Solo Project  <img src='https://static.thenounproject.com/png/4311433-200.png' width="20px"   style={{filter : theme=='day'? 'inherit' : "invert()" , width:"20PX"}}/></span></h2>
+</div>
+</div>
+
+
+
+
 <div className="project-card" style={{backgroundColor : theme=='day'? null : 'rgb(18, 32, 32)' , borderRadius: '10px' }}>
   <video  autoPlay controls loop>
     <source src={Glosier} type="video/mp4" />
@@ -123,6 +188,7 @@ A beauty website and community devoted to sharing real information with real peo
 <h4><span style={{color : theme=='day'? 'rgb(0, 85, 160)' : 'limegreen'}} >Collabrative project with a team of 4 members   <img src='https://icons.veryicon.com/png/o/miscellaneous/site-icon-library/team-28.png' width='30px'   style={{filter : theme=='day'? 'inherit' : "invert()" , width:"20PX"}}/></span></h4>
  </div>
 </div>
+
 
 
 
@@ -164,6 +230,7 @@ I've created the  ProductDetails page and Product page .
 </div>
 
 
+
 <div className="project-card"  style={{backgroundColor : theme=='day'? null : 'rgb(18, 32, 32)' , borderRadius: '10px' }}>
   <video loop autoPlay controls >
     <source src={boat} type="video/mp4" />
@@ -193,6 +260,11 @@ it's a clone of an e-commerce website that is boat ,boat deals with smart life s
 <h4><span style={{color : theme=='day'? 'rgb(0, 85, 160)' : 'limegreen'}}> Collabrative project with a team of 4 members  <img src='https://icons.veryicon.com/png/o/miscellaneous/site-icon-library/team-28.png' width='30px'  style={{filter : theme=='day'? 'inherit' : "invert()" , width:"20PX"}}/></span></h4>
 </div>
 </div>
+
+
+
+
+
 
 
  
