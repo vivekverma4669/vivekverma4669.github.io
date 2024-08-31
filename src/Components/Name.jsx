@@ -3,7 +3,7 @@ import './Name.css';
 import Resume from './Videos/Vivek-Verma-Resume.pdf';
 import { AuthTheme } from '../AuthThemeProvider';
 import { useContext } from 'react';
-
+import hero from '../images/hero.png'
 const Box1 = () => {
   const {theme, toggleTheme } = useContext(AuthTheme);
 
@@ -57,7 +57,7 @@ const Box1 = () => {
         </div>
  
          <div className="box112">
-         <img src="https://i.ibb.co/ph8tkQB/6865464-removebg.png" alt="side image " border="0" />
+         <img src={hero} alt="side image " border="0" />
          </div>  
 
       </div>  

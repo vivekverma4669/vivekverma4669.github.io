@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import './about.css';
 import { AuthTheme } from '../AuthThemeProvider';
+import vivek from '../images/vivek.jpeg'
 
 const About = () => {
   const {theme} =useContext(AuthTheme);
@@ -18,7 +19,7 @@ const About = () => {
         <div className="container">
           <div className="row">
             <div className="about-col-1">
-              <img className='home-img' src="https://i.ibb.co/1r9Hhxs/Whats-App-Image-2024-01-17-at-20-04-51-344e3480.jpg" alt="Vivek" loading='lazy'/>
+              <img className='home-img' src={vivek} alt="Vivek" loading='lazy'/>
             </div>
             <div className="about-col-2">
               <p id="user-detail-intro" style={{color : theme=='day'? null: "white"}}>
