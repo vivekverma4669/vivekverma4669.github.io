@@ -53,10 +53,11 @@ fieldset{
     color: aliceblue;
 }
 
-.card img{
+.card img,
+.card-icon {
  border-radius: 10px;
- width: 100%;
- height: 80px;
+ width: 100% !important;
+ height: 80px !important;
 }
 
 
