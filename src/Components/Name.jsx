@@ -161,7 +161,10 @@ const Box1 = () => {
               <a download="Vivek-Verma-Resume" href={Resume}>
                 {" "}
                 Resume{" "}
-                <DownloadIcon style={{ verticalAlign: "middle", fontSize: "20px" }} id="resume-button-1" />
+                <DownloadIcon
+                  style={{ verticalAlign: "middle", fontSize: "20px" }}
+                  id="resume-button-1"
+                />
               </a>
             </button>
 
@@ -170,11 +173,13 @@ const Box1 = () => {
               style={{ backgroundColor: theme == "day" ? null : "green" }}
             >
               <a
-                href="https://drive.google.com/file/d/1A1ucAILtk5VX1KkCi0hRXtZBGBZP449g/view?usp=sharing"
+                href="https://drive.google.com/file/d/18Bg7_DSEvavAx7JsUd4qdU9C3jVJwn31/view?usp=sharing"
                 target="blank"
               >
                 Resume{" "}
-                <OpenInNewIcon style={{ verticalAlign: "middle", fontSize: "20px" }} />
+                <OpenInNewIcon
+                  style={{ verticalAlign: "middle", fontSize: "20px" }}
+                />
               </a>
             </button>
           </div>
