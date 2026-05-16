@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"const si = require\\('react-icons/si'\\); const check = ['SiMongodb','SiRedux','SiTypescript','SiNextdotjs','SiBootstrap','SiMui','SiGit','SiGithub','SiOpenai','SiNetlify','SiPostman','SiFirebase','SiCss']; check.forEach\\(k => console.log\\(k, !!si[k]\\)\\);\")"
+    ]
+  }
+}

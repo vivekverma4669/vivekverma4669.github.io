@@ -2,9 +2,17 @@ import React, { useContext } from "react";
 import "./contact.css";
 import { AuthTheme } from "../AuthThemeProvider";
 import Resume from "./Videos/Vivek-Verma-Resume.pdf";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import EmailIcon from "@mui/icons-material/Email";
+import PhoneIcon from "@mui/icons-material/Phone";
+import DownloadIcon from "@mui/icons-material/Download";
+import { FaGithub, FaWhatsapp, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const Contact = () => {
   const { theme } = useContext(AuthTheme);
+  const iconColor = theme === "day" ? "#333" : "#fff";
+  const iconSize = 35;
+
   return (
     <>
       <div
@@ -36,8 +44,8 @@ const Contact = () => {
 
             <div className="box5111">
               <p style={{ color: theme == "day" ? null : "white" }}>
-                <i className="fa-solid fa-location-dot"></i> Prayagraj, Uttar
-                Pradesh
+                <LocationOnIcon style={{ verticalAlign: "middle", marginRight: "6px" }} />
+                Prayagraj, Uttar Pradesh
               </p>
             </div>
 
@@ -46,39 +54,27 @@ const Contact = () => {
                 id="contact-email"
                 style={{ color: theme == "day" ? null : "white" }}
               >
-                <i className="fa-solid fa-envelope"></i>vivekverma4679@gmail.com
+                <EmailIcon style={{ verticalAlign: "middle", marginRight: "6px" }} />
+                vivekverma4679@gmail.com
               </p>
             </div>
 
             <div className="box5111">
               <p style={{ color: theme == "day" ? null : "white" }}>
-                <i className="fa-solid fa-phone"></i> +91-9369546165
+                <PhoneIcon style={{ verticalAlign: "middle", marginRight: "6px" }} />
+                +91-9369546165
               </p>
             </div>
 
             <div className="box5112">
               <div className="ico">
                 <a href="https://github.com/vivekverma4669" id="contact-github">
-                  {" "}
-                  <img
-                    src="https://www.svgrepo.com/show/361181/github.svg"
-                    style={{
-                      width: "35px",
-                      filter: theme == "day" ? null : "invert(100%)",
-                    }}
-                  ></img>{" "}
+                  <FaGithub size={iconSize} color={iconColor} />
                 </a>
               </div>
               <div className="ico">
                 <a href="https://wa.me/919369546165" id="contact-phone">
-                  {" "}
-                  <img
-                    src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/logo/logo-whatsapp-esz7748uz5sohs2ktm4o.png/logo-whatsapp-6mihjwai8cvcdrwckxq459.png?_a=DATAiZAAZAA0"
-                    style={{
-                      width: "35px",
-                      filter: theme == "day" ? null : "invert(100%)",
-                    }}
-                  ></img>
+                  <FaWhatsapp size={iconSize} color="#25D366" />
                 </a>
               </div>
               <div className="ico">
@@ -86,48 +82,22 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/vivek-verma-594700228/"
                   id="contact-linkedin"
                 >
-                  <img
-                    src="https://www.svgrepo.com/show/108614/linkedin.svg"
-                    style={{
-                      width: "35px",
-                      filter: theme == "day" ? null : "invert(100%)",
-                    }}
-                  ></img>
+                  <FaLinkedin size={iconSize} color="#0A66C2" />
                 </a>
               </div>
-              {/* <div className="ico"><a href="https://www.linkedin.com/in/vivek-verma-594700228/" id=''><img src='https://www.svgrepo.com/show/108614/linkedin.svg'  style={{width:"35px"}}></img></a></div> */}
               <div className="ico">
                 <a href="mailto:vivekverma4679@gmail.com" id="contact-email">
-                  <img
-                    src="https://static.vecteezy.com/system/resources/thumbnails/018/931/264/small/black-mail-icon-png.png"
-                    style={{
-                      width: "40px",
-                      filter: theme == "day" ? null : "invert(100%)",
-                    }}
-                  ></img>
+                  <EmailIcon style={{ fontSize: iconSize, color: theme === "day" ? "#EA4335" : "#EA4335" }} />
                 </a>
               </div>
               <div className="ico">
                 <a href="https://www.instagram.com/vivek__.soni/">
-                  {" "}
-                  <img
-                    src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/black-instagram-icon.png"
-                    style={{
-                      width: "35px",
-                      filter: theme == "day" ? null : "invert(100%)",
-                    }}
-                  ></img>
+                  <FaInstagram size={iconSize} color="#E4405F" />
                 </a>
               </div>
               <div className="ico">
                 <a href="tel:+919369546165" id="contact-phone">
-                  <img
-                    src="https://www.iconpacks.net/icons/1/free-phone-icon-504-thumb.png"
-                    style={{
-                      width: "35px",
-                      filter: theme == "day" ? null : "invert(100%)",
-                    }}
-                  ></img>
+                  <PhoneIcon style={{ fontSize: iconSize, color: iconColor }} />
                 </a>
               </div>
             </div>
@@ -151,11 +121,7 @@ const Contact = () => {
                 <a download="Vivek-Verma-Resume" href={Resume}>
                   {" "}
                   Resume{" "}
-                  <img
-                    src="https://icon-library.com/images/download-icon-white-png/download-icon-white-png-22.jpg"
-                    style={{ width: "30px" }}
-                    id="resume-button-1"
-                  />
+                  <DownloadIcon style={{ verticalAlign: "middle", fontSize: "20px" }} id="resume-button-1" />
                 </a>
               </button>
             </div>
@@ -178,48 +144,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-//    <div class="box5 reveal" id="box5">
-//    <div class="box51">
-//        <h1>CONTACT</h1>
-//    </div>
-
-//    <div class="box52">
-
-//        <div class="box511">
-
-//            <h1 class="box5h1">Reach Out to me!</h1>
-
-//            <h3 class="box5h3">DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.</h3>
-
-//            <div class="box5111">
-//                <p><i class="fa-solid fa-location-dot"></i> Barmer, Rajasthan</p>
-//            </div>
-//            <div class="box5111">
-//                <p><i class="fa-solid fa-envelope"></i> dineshjangid538@gmail.com</p>
-//            </div>
-//            <div class="box5111">
-//                <p><i class="fa-solid fa-phone"></i> +91-8696700323</p>
-//            </div>
-
-//            <div class="box5112">
-//                <div class="ico"><a href="https://github.com/dineshjangid03/"><i class="fa-brands fa-github"></i></a></div>
-//                <div class="ico"><a href="https://www.linkedin.com/in/dineshjangid03/"><i class="fa-brands fa-linkedin"></i></a></div>
-//                <div class="ico"><a href="mailto:dineshjangid538@gmail.com"><i class="fa-solid fa-envelope"></i></a></div>
-//                <div class="ico"><a href="tel:+918696700323"><i class="fa-solid fa-phone"></i></a></div>
-//                <div class="ico"><a href="https://www.instagram.com/dineshjangid03/"><i class="fa-brands fa-square-instagram"></i></a></div>
-//                <div class="ico"><a href="https://wa.me/918696700323"><i class="fa-brands fa-whatsapp"></i></a></div>
-//            </div>
-
-//        </div>
-
-//        <div class="box512">
-//            <img class="img51" src="image/img2.png" alt="">
-//            <div class="btn_div">
-//                <button class="rbtn"><a download="" href="pdf/DINESH_KUMAR_Resume.pdf">Resume</a></button>
-//            </div>
-//        </div>
-
-//    </div>
-
-// </div>

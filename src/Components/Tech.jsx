@@ -1,8 +1,35 @@
 import { useContext } from "react";
 import "./tech.css";
 import { AuthTheme } from "../AuthThemeProvider";
+import {
+  SiHtml5,
+  SiCss,
+  SiJavascript,
+  SiReact,
+  SiTypescript,
+  SiNextdotjs,
+  SiMongodb,
+  SiNodedotjs,
+  SiExpress,
+  SiRedux,
+  SiBootstrap,
+  SiReactrouter,
+  SiGithub,
+  SiGit,
+  SiOpenai,
+  SiNetlify,
+  SiPostman,
+  SiRazorpay,
+  SiFirebase,
+  SiMui,
+} from "react-icons/si";
+import { FaJava, FaKey } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+
 const Tech = () => {
   const { theme } = useContext(AuthTheme);
+  const mono = theme === "day" ? "#111" : "#fff";
+
   return (
     <div
       style={{
@@ -46,84 +73,89 @@ const Tech = () => {
           style={{ backgroundColor: theme == "day" ? null : "rgb(16, 22,34)" }}
         >
           <div className="card">
-            <img src="https://icon-library.com/images/html5-icon/html5-icon-13.jpg" />{" "}
+            <SiHtml5 className="card-icon" color="#E34F26" />
             <h3 style={{ color: theme == "day" ? "black" : "white" }}>HTML</h3>
           </div>
           <div className="card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/768px-CSS3_logo.svg.png?20210705212817p" />{" "}
+            <SiCss className="card-icon" color="#1572B6" />
             <h3 style={{ color: theme == "day" ? "black" : "white" }}>CSS</h3>
           </div>
           <div className="card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/768px-Unofficial_JavaScript_logo_2.svg.png?20141107110902" />{" "}
+            <SiJavascript className="card-icon" color="#F7DF1E" />
             <h3 style={{ color: theme == "day" ? "black" : "white" }}>
               Java Script
             </h3>
           </div>
           <div className="card">
-            <img src="https://cdn.worldvectorlogo.com/logos/react-1.svg" />{" "}
+            <SiReact className="card-icon" color="#61DAFB" />
             <h3 style={{ color: theme == "day" ? "black" : "white" }}>React</h3>
           </div>
           <div className="card">
-            <img src="https://w7.pngwing.com/pngs/915/519/png-transparent-typescript-hd-logo-thumbnail.png" />{" "}
+            <SiTypescript className="card-icon" color="#3178C6" />
             <h3 style={{ color: theme == "day" ? "black" : "white" }}>
               Type Script
             </h3>
           </div>
           <div className="card">
-            <img
-              src="https://cdn.worldvectorlogo.com/logos/next-js.svg"
-              style={{ filter: theme == "day" ? "inherit" : "invert()" }}
-            />{" "}
+            <SiNextdotjs className="card-icon" color={mono} />
             <h3 style={{ color: theme == "day" ? "black" : "white" }}>
               Next js
             </h3>
           </div>
           <div className="card">
-            <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/1200/external-java-is-a-general-purpose-programming-language-that-is-class-based-logo-shadow-tal-revivo.jpg" />{" "}
+            <FaJava className="card-icon" color="#007396" />
             <h3 style={{ color: theme == "day" ? "black" : "white" }}>Java</h3>
           </div>
           <div className="card">
-            <img src="https://www.svgrepo.com/show/439231/mongodb.svg" />{" "}
+            <SiMongodb className="card-icon" color="#47A248" />
             <h3 style={{ color: theme == "day" ? "black" : "white" }}>
               Mongol DB
             </h3>
           </div>
           <div className="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" />{" "}
+            <SiNodedotjs className="card-icon" color="#339933" />
             <h3 style={{ color: theme == "day" ? "black" : "white" }}>
               Node js
             </h3>
           </div>
           <div className="card">
-            <img src="https://img.icons8.com/ios7/1200/express-js.jpg" />{" "}
+            <SiExpress className="card-icon" color={mono} />
             <h3 style={{ color: theme == "day" ? "black" : "white" }}>
               Express js
             </h3>
           </div>
           <div className="card">
-            <img
-              src="https://cdn.iconscout.com/icon/free/png-256/free-redux-3629610-3032308.png"
-              style={{ filter: theme == "day" ? "inherit" : "invert()" }}
-            />{" "}
+            <SiRedux className="card-icon" color="#764ABC" />
             <h3 style={{ color: theme == "day" ? "black" : "white" }}>Redux</h3>
           </div>
           <div className="card">
-            <img src="https://brandlogos.net/wp-content/uploads/2021/09/bootstrap-logo.png" />{" "}
+            <SiBootstrap className="card-icon" color="#7952B3" />
             <h3 style={{ color: theme == "day" ? "black" : "white" }}>
               Boot strap
             </h3>
           </div>
           <div className="card">
-            <img src="https://www.svgrepo.com/show/354262/react-router.svg" />{" "}
+            <SiReactrouter className="card-icon" color="#CA4245" />
             <h3 style={{ color: theme == "day" ? "black" : "white" }}>
-              Rauter
+              Router
             </h3>
           </div>
           <div className="card">
-            <img src="https://avatars.githubusercontent.com/u/1160530?s=280&v=4" />{" "}
+            <FaKey className="card-icon" color={mono} />
             <h3 style={{ color: theme == "day" ? "black" : "white" }}>
               Passport
             </h3>
+          </div>
+          <div className="card">
+            <FaReact className="card-icon" color="#61DAFB" />
+            <h3 style={{ color: theme == "day" ? "black" : "white" }}>
+              React Native
+            </h3>
+          </div>
+
+          <div className="card">
+            <SiMui className="card-icon" color="#007FFF" />
+            <h3 style={{ color: theme == "day" ? "black" : "white" }}>MUI</h3>
           </div>
         </div>
       </fieldset>
@@ -150,44 +182,41 @@ const Tech = () => {
           style={{ backgroundColor: theme == "day" ? null : "rgb(16, 22,34)" }}
         >
           <div className="card">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-              style={{ filter: theme == "day" ? "inherit" : "invert()" }}
-            />{" "}
+            <SiGithub className="card-icon" color={mono} />
             <h3 style={{ color: theme == "day" ? "black" : "white" }}>
               Git hub
             </h3>
           </div>
           <div className="card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1200px-Git_icon.svg.png" />{" "}
+            <SiGit className="card-icon" color="#F05032" />
             <h3 style={{ color: theme == "day" ? "black" : "white" }}>Git</h3>
           </div>
           <div className="card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1024px-ChatGPT_logo.svg.png" />{" "}
+            <SiOpenai className="card-icon" color={mono} />
             <h3 style={{ color: theme == "day" ? "black" : "white" }}>
               Chat GPT
             </h3>
           </div>
           <div className="card">
-            <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/netlify_logo_icon_169923.png" />{" "}
+            <SiNetlify className="card-icon" color="#00C7B7" />
             <h3 style={{ color: theme == "day" ? "black" : "white" }}>
-              Netify
+              Netlify
             </h3>
           </div>
           <div className="card">
-            <img src="https://www.svgrepo.com/show/354202/postman-icon.svg" />{" "}
+            <SiPostman className="card-icon" color="#FF6C37" />
             <h3 style={{ color: theme == "day" ? "black" : "white" }}>
-              postman{" "}
+              Postman
             </h3>
           </div>
           <div className="card">
-            <img src="https://d6xcmfyh68wv8.cloudfront.net/assets/razorpay-glyph.svg" />{" "}
+            <SiRazorpay className="card-icon" color="#2C73C5" />
             <h3 style={{ color: theme == "day" ? "black" : "white" }}>
-              razorpay
+              Razorpay
             </h3>
           </div>
           <div className="card">
-            <img src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png" />{" "}
+            <SiFirebase className="card-icon" color="#FFCA28" />
             <h3 style={{ color: theme == "day" ? "black" : "white" }}>
               Firebase
             </h3>
