@@ -1,5 +1,7 @@
 import "./project.css";
 import Electron from "./Videos/Electron.mp4";
+import Hiremind from "./Videos/hiremind.mp4";
+import Elevate from "./Videos/elevate-crm.mp4";
 import Elogo from "./Videos/eLogo.jpg";
 import Leo from "./Videos/Leo.mp4";
 import { useContext } from "react";
@@ -56,7 +58,7 @@ const Project = () => {
           style={{ backgroundColor: cardBg, borderRadius: "10px" }}
         >
           <video loop autoPlay muted controls>
-            <source src={Electron} type="video/mp4" />
+            <source src={Elevate} type="video/mp4" />
           </video>
           <div className="des">
             <div
@@ -149,7 +151,7 @@ const Project = () => {
           style={{ backgroundColor: cardBg, borderRadius: "10px" }}
         >
           <video loop autoPlay muted controls>
-            <source src={Leo} type="video/mp4" />
+            <source src={Hiremind} type="video/mp4" />
           </video>
           <div className="des">
             <div
