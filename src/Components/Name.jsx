@@ -135,18 +135,35 @@ const Box1 = () => {
               marginLeft: "20px",
             }}
           >
-            I am a enthusiastic{" "}
             <span
               style={{
                 color: theme == "day" ? "black" : "white",
                 textShadow: "2px 2px grey",
               }}
             >
-              Full Stack Web Developer
+              I am a Frontend-Focused Full Stack Developer
             </span>
-            <br /> dedicated to crafting cohesive web applications that
-            seamlessly integrate polished front-end design with strong back-end
-            proficiency.
+            <br />
+            <span
+              style={{
+                fontSize: "0.75em",
+                color: theme == "day" ? "#444" : "#aaa",
+              }}
+            >
+              dedicated to crafting cohesive web applications that seamlessly
+              integrate polished front-end design with strong back-end
+              proficiency. React is my core ·~2 years building production SaaS
+              at{" "}
+            </span>
+            <span
+              style={{
+                fontSize: "0.75em",
+                color: theme == "day" ? "rgb(0,85,169)" : "#32de84",
+                fontWeight: "bold",
+              }}
+            >
+              Galific Solutions
+            </span>
           </h3>
 
           <div className="btn_div">

@@ -114,6 +114,8 @@ body{
 .aboutSkill{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(310px,1fr));
+    padding-left: 0;
+    margin: 0;
 }
 
 @media screen and (min-width: 200px) and (max-width: 400px){

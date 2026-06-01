@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(node -e \"const si = require\\('react-icons/si'\\); const check = ['SiMongodb','SiRedux','SiTypescript','SiNextdotjs','SiBootstrap','SiMui','SiGit','SiGithub','SiOpenai','SiNetlify','SiPostman','SiFirebase','SiCss']; check.forEach\\(k => console.log\\(k, !!si[k]\\)\\);\")"
+      "Bash(node -e \"const si = require\\('react-icons/si'\\); const check = ['SiMongodb','SiRedux','SiTypescript','SiNextdotjs','SiBootstrap','SiMui','SiGit','SiGithub','SiOpenai','SiNetlify','SiPostman','SiFirebase','SiCss']; check.forEach\\(k => console.log\\(k, !!si[k]\\)\\);\")",
+      "Bash(gh repo *)",
+      "PowerShell(gh repo view vivekverma4669/ElevateCRM --json description,topics,readme 2>&1 | Select-Object -First 100)",
+      "Bash(node *)"
     ]
   }
 }

@@ -68,7 +68,7 @@ const SkillsSection = () => {
 <div className="github_stat" style={{margin: 'auto'}}>
     <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=vivekverma4669&show_icons=true&locale=en&layout=compact&theme=dracula" alt="GitHub Streak Stats" />
     <img  style={{minHeight :"195px"}} src="https://github-readme-stats.vercel.app/api/top-langs?username=vivekverma4669&show_icons=true&locale=en&layout=compact&theme=dracula" alt=""/>
-    <img  id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=vivekverma4669&show_icons=true&locale=en&layout=compact&theme=dracula" alt="GitHub Stats Card" /> 
+    <img id="github-stats-card" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=vivekverma4669&theme=dracula" alt="GitHub Stats Card" />
 </div>
 
 
