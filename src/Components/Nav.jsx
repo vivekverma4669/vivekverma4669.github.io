@@ -22,6 +22,7 @@ import { AuthTheme } from "../AuthThemeProvider";
       <ul className={menuOpen ? "open" : ""}>
         <li className="tdn"><a style={{color : theme=='day'? null :'white'}} href="#home" className="nav-link home">Home</a></li>
         <li className="tdn"><a style={{color : theme=='day'? null :'white'}} href="#about" className="nav-link about">About</a></li>
+        <li className="tdn"><a style={{color : theme=='day'? null :'white'}} href="#experience" className="nav-link">Experience</a></li>
         <li className="tdn"><a style={{color : theme=='day'? null :'white'}} href="#techS" className="nav-link skills">Tech Stack</a></li>
         <li className="tdn"><a style={{color : theme=='day'? null :'white'}} href='#projects' className="nav-link projects">Project</a></li>
         <li className="tdn"><a style={{color : theme=='day'? null :'white'}} href="#skill" className="nav-link">My Skills</a></li>

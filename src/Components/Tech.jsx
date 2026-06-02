@@ -2,227 +2,113 @@ import { useContext } from "react";
 import "./tech.css";
 import { AuthTheme } from "../AuthThemeProvider";
 import {
-  SiHtml5,
-  SiCss,
-  SiJavascript,
-  SiReact,
-  SiTypescript,
-  SiNextdotjs,
-  SiMongodb,
-  SiNodedotjs,
-  SiExpress,
-  SiRedux,
-  SiBootstrap,
-  SiReactrouter,
-  SiGithub,
-  SiGit,
-  SiOpenai,
-  SiNetlify,
-  SiPostman,
-  SiRazorpay,
-  SiFirebase,
-  SiMui,
+  SiHtml5, SiCss, SiJavascript, SiReact, SiTypescript, SiNextdotjs,
+  SiMongodb, SiNodedotjs, SiExpress, SiRedux,
+  SiGithub, SiGit, SiNetlify, SiPostman, SiRazorpay, SiFirebase,
+  SiMui, SiDocker, SiRedis, SiGooglegemini, SiAnthropic, SiBitbucket,
 } from "react-icons/si";
-import { FaJava, FaKey } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
+import { FaKey, FaReact } from "react-icons/fa";
 
 const Tech = () => {
   const { theme } = useContext(AuthTheme);
   const mono = theme === "day" ? "#111" : "#fff";
+  const textColor = theme === "day" ? "#222" : "#f0f0f0";
+  const labelColor = theme === "day" ? "rgb(0,85,169)" : "#32de84";
+  const chipBorder = theme === "day" ? "rgba(0,85,169,0.25)" : "rgba(100,180,255,0.2)";
+  const chipBg = theme === "day" ? "rgba(0,85,169,0.05)" : "rgba(100,180,255,0.07)";
+  const wrapperBg = theme === "day" ? "#eef3f7" : "rgb(18,28,44)";
+
+  const Chip = ({ icon: Icon, color, label }) => (
+    <div className="tech-chip" style={{ borderColor: chipBorder, backgroundColor: chipBg }}>
+      {Icon
+        ? <Icon size={22} color={color} />
+        : <span className="chip-dot" style={{ background: color }} />
+      }
+      <span style={{ color: textColor }}>{label}</span>
+    </div>
+  );
+
+  const ImgChip = ({ slug, color, label }) => (
+    <div className="tech-chip" style={{ borderColor: chipBorder, backgroundColor: chipBg }}>
+      <img
+        src={`https://cdn.simpleicons.org/${slug}/${color.replace('#', '')}`}
+        width={22} height={22} alt={label}
+        style={{ display: 'block', flexShrink: 0 }}
+      />
+      <span style={{ color: textColor }}>{label}</span>
+    </div>
+  );
+
+  const Group = ({ label, children }) => (
+    <div className="tech-group">
+      <div className="tech-group-label" style={{ color: labelColor }}>{label}</div>
+      <div className="tech-chips">{children}</div>
+    </div>
+  );
 
   return (
-    <div
-      style={{
-        backgroundColor: theme == "day" ? null : "rgb(16, 22,34)",
-        marginTop: "-50px",
-      }}
-    >
+    <div style={{ backgroundColor: theme === "day" ? null : "rgb(16, 22,34)", marginTop: "-50px" }}>
       <h1
         className="techS"
         id="techS"
         style={{
           textAlign: "center",
-          color: theme == "day" ? "rgb(0, 85, 169)" : "#32de84",
+          color: theme === "day" ? "rgb(0, 85, 169)" : "#32de84",
           textShadow: "2px 2px 2px black",
           fontSize: "50px",
         }}
       >
-        <ul>Tech Stack</ul>
+        Tech Stack
       </h1>
 
-      <fieldset
-        style={{ backgroundColor: theme == "day" ? null : "rgb(16, 22,34)" }}
-      >
-        <legend>
-          {" "}
-          <h2
-            style={{
-              textAlign: "center",
-              color: theme == "day" ? "rgb(0, 85, 169)" : "rgb(42, 205, 216)",
-              textShadow: "2px 2px 2px black",
-              fontSize: "50px",
-              backgroundColor: theme == "day" ? null : "rgb(16, 22,34)",
-            }}
-            className="stack"
-          >
-            Languages & Skills{" "}
-          </h2>
-        </legend>
-        <div
-          className="container2"
-          style={{ backgroundColor: theme == "day" ? null : "rgb(16, 22,34)" }}
-        >
-          <div className="card">
-            <SiHtml5 className="card-icon" color="#E34F26" />
-            <h3 style={{ color: theme == "day" ? "black" : "white" }}>HTML</h3>
-          </div>
-          <div className="card">
-            <SiCss className="card-icon" color="#1572B6" />
-            <h3 style={{ color: theme == "day" ? "black" : "white" }}>CSS</h3>
-          </div>
-          <div className="card">
-            <SiJavascript className="card-icon" color="#F7DF1E" />
-            <h3 style={{ color: theme == "day" ? "black" : "white" }}>
-              Java Script
-            </h3>
-          </div>
-          <div className="card">
-            <SiReact className="card-icon" color="#61DAFB" />
-            <h3 style={{ color: theme == "day" ? "black" : "white" }}>React</h3>
-          </div>
-          <div className="card">
-            <SiTypescript className="card-icon" color="#3178C6" />
-            <h3 style={{ color: theme == "day" ? "black" : "white" }}>
-              Type Script
-            </h3>
-          </div>
-          <div className="card">
-            <SiNextdotjs className="card-icon" color={mono} />
-            <h3 style={{ color: theme == "day" ? "black" : "white" }}>
-              Next js
-            </h3>
-          </div>
-          <div className="card">
-            <FaJava className="card-icon" color="#007396" />
-            <h3 style={{ color: theme == "day" ? "black" : "white" }}>Java</h3>
-          </div>
-          <div className="card">
-            <SiMongodb className="card-icon" color="#47A248" />
-            <h3 style={{ color: theme == "day" ? "black" : "white" }}>
-              Mongol DB
-            </h3>
-          </div>
-          <div className="card">
-            <SiNodedotjs className="card-icon" color="#339933" />
-            <h3 style={{ color: theme == "day" ? "black" : "white" }}>
-              Node js
-            </h3>
-          </div>
-          <div className="card">
-            <SiExpress className="card-icon" color={mono} />
-            <h3 style={{ color: theme == "day" ? "black" : "white" }}>
-              Express js
-            </h3>
-          </div>
-          <div className="card">
-            <SiRedux className="card-icon" color="#764ABC" />
-            <h3 style={{ color: theme == "day" ? "black" : "white" }}>Redux</h3>
-          </div>
-          <div className="card">
-            <SiBootstrap className="card-icon" color="#7952B3" />
-            <h3 style={{ color: theme == "day" ? "black" : "white" }}>
-              Boot strap
-            </h3>
-          </div>
-          <div className="card">
-            <SiReactrouter className="card-icon" color="#CA4245" />
-            <h3 style={{ color: theme == "day" ? "black" : "white" }}>
-              Router
-            </h3>
-          </div>
-          <div className="card">
-            <FaKey className="card-icon" color={mono} />
-            <h3 style={{ color: theme == "day" ? "black" : "white" }}>
-              Passport
-            </h3>
-          </div>
-          <div className="card">
-            <FaReact className="card-icon" color="#61DAFB" />
-            <h3 style={{ color: theme == "day" ? "black" : "white" }}>
-              React Native
-            </h3>
-          </div>
+      <div className="tech-wrapper" style={{ backgroundColor: wrapperBg }}>
 
-          <div className="card">
-            <SiMui className="card-icon" color="#007FFF" />
-            <h3 style={{ color: theme == "day" ? "black" : "white" }}>MUI</h3>
-          </div>
-        </div>
-      </fieldset>
+        <Group label="Frontend">
+          <Chip icon={SiHtml5} color="#E34F26" label="HTML5" />
+          <Chip icon={SiCss} color="#1572B6" label="CSS3" />
+          <Chip icon={SiJavascript} color="#F7DF1E" label="JavaScript" />
+          <Chip icon={SiReact} color="#61DAFB" label="React" />
+          <Chip icon={SiTypescript} color="#3178C6" label="TypeScript" />
+          <Chip icon={SiNextdotjs} color={mono} label="Next.js" />
+          <Chip icon={SiRedux} color="#764ABC" label="Redux" />
+          <Chip icon={SiMui} color="#007FFF" label="MUI" />
+          <Chip icon={null} color="#FF4154" label="React Query" />
+        </Group>
 
-      <fieldset
-        style={{ backgroundColor: theme == "day" ? null : "rgb(16, 22,34)" }}
-      >
-        <legend>
-          {" "}
-          <h2
-            style={{
-              textAlign: "center",
-              color: theme == "day" ? "rgb(0, 85, 169)" : "rgb(42, 205, 216)",
-              textShadow: "2px 2px 2px black",
-              fontSize: "50px",
-            }}
-            className="stack"
-          >
-            Tools{" "}
-          </h2>
-        </legend>
-        <div
-          className="container2"
-          style={{ backgroundColor: theme == "day" ? null : "rgb(16, 22,34)" }}
-        >
-          <div className="card">
-            <SiGithub className="card-icon" color={mono} />
-            <h3 style={{ color: theme == "day" ? "black" : "white" }}>
-              Git hub
-            </h3>
-          </div>
-          <div className="card">
-            <SiGit className="card-icon" color="#F05032" />
-            <h3 style={{ color: theme == "day" ? "black" : "white" }}>Git</h3>
-          </div>
-          <div className="card">
-            <SiOpenai className="card-icon" color={mono} />
-            <h3 style={{ color: theme == "day" ? "black" : "white" }}>
-              Chat GPT
-            </h3>
-          </div>
-          <div className="card">
-            <SiNetlify className="card-icon" color="#00C7B7" />
-            <h3 style={{ color: theme == "day" ? "black" : "white" }}>
-              Netlify
-            </h3>
-          </div>
-          <div className="card">
-            <SiPostman className="card-icon" color="#FF6C37" />
-            <h3 style={{ color: theme == "day" ? "black" : "white" }}>
-              Postman
-            </h3>
-          </div>
-          <div className="card">
-            <SiRazorpay className="card-icon" color="#2C73C5" />
-            <h3 style={{ color: theme == "day" ? "black" : "white" }}>
-              Razorpay
-            </h3>
-          </div>
-          <div className="card">
-            <SiFirebase className="card-icon" color="#FFCA28" />
-            <h3 style={{ color: theme == "day" ? "black" : "white" }}>
-              Firebase
-            </h3>
-          </div>
-        </div>
-      </fieldset>
+        <Group label="Backend">
+          <Chip icon={SiNodedotjs} color="#339933" label="Node.js" />
+          <Chip icon={SiExpress} color={mono} label="Express" />
+          <Chip icon={SiMongodb} color="#47A248" label="MongoDB" />
+          <Chip icon={SiRedis} color="#DC382D" label="Redis" />
+          <Chip icon={FaKey} color={mono} label="Passport.js" />
+        </Group>
+
+        <Group label="Mobile">
+          <Chip icon={FaReact} color="#61DAFB" label="React Native" />
+        </Group>
+
+        <Group label="DevOps">
+          <Chip icon={SiDocker} color="#2496ED" label="Docker" />
+        </Group>
+
+        <Group label="AI / LLMs">
+          <ImgChip slug="groq" color="#FF6B35" label="Groq" />
+          <ImgChip slug="xai" color={theme === "day" ? "111111" : "ffffff"} label="Grok (xAI)" />
+          <Chip icon={SiGooglegemini} color="#4285F4" label="Gemini" />
+          <Chip icon={SiAnthropic} color="#D97757" label="Claude / Opus" />
+        </Group>
+
+        <Group label="Tools">
+          <Chip icon={SiGit} color="#F05032" label="Git" />
+          <Chip icon={SiGithub} color={mono} label="GitHub" />
+          <Chip icon={SiBitbucket} color="#0052CC" label="Bitbucket" />
+          <Chip icon={SiPostman} color="#FF6C37" label="Postman" />
+          <Chip icon={SiFirebase} color="#FFCA28" label="Firebase" />
+          <Chip icon={SiNetlify} color="#00C7B7" label="Netlify" />
+          <Chip icon={SiRazorpay} color="#2C73C5" label="Razorpay" />
+        </Group>
+
+      </div>
     </div>
   );
 };

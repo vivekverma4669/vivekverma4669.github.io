@@ -44,7 +44,9 @@ const Contact = () => {
 
             <div className="box5111">
               <p style={{ color: theme == "day" ? null : "white" }}>
-                <LocationOnIcon style={{ verticalAlign: "middle", marginRight: "6px" }} />
+                <LocationOnIcon
+                  style={{ verticalAlign: "middle", marginRight: "6px" }}
+                />
                 Prayagraj, Uttar Pradesh
               </p>
             </div>
@@ -54,14 +56,18 @@ const Contact = () => {
                 id="contact-email"
                 style={{ color: theme == "day" ? null : "white" }}
               >
-                <EmailIcon style={{ verticalAlign: "middle", marginRight: "6px" }} />
+                <EmailIcon
+                  style={{ verticalAlign: "middle", marginRight: "6px" }}
+                />
                 vivekverma4679@gmail.com
               </p>
             </div>
 
             <div className="box5111">
               <p style={{ color: theme == "day" ? null : "white" }}>
-                <PhoneIcon style={{ verticalAlign: "middle", marginRight: "6px" }} />
+                <PhoneIcon
+                  style={{ verticalAlign: "middle", marginRight: "6px" }}
+                />
                 +91-9369546165
               </p>
             </div>
@@ -74,7 +80,7 @@ const Contact = () => {
               </div>
               <div className="ico">
                 <a href="https://wa.me/919369546165" id="contact-phone">
-                  <FaWhatsapp size={iconSize} color="#25D366" />
+                  <FaWhatsapp size={iconSize} color="#009436" />
                 </a>
               </div>
               <div className="ico">
@@ -87,7 +93,12 @@ const Contact = () => {
               </div>
               <div className="ico">
                 <a href="mailto:vivekverma4679@gmail.com" id="contact-email">
-                  <EmailIcon style={{ fontSize: iconSize, color: theme === "day" ? "#EA4335" : "#EA4335" }} />
+                  <EmailIcon
+                    style={{
+                      fontSize: iconSize,
+                      color: theme === "day" ? "#EA4335" : "#EA4335",
+                    }}
+                  />
                 </a>
               </div>
               <div className="ico">
@@ -121,7 +132,10 @@ const Contact = () => {
                 <a download="Vivek-Verma-Resume" href={Resume}>
                   {" "}
                   Resume{" "}
-                  <DownloadIcon style={{ verticalAlign: "middle", fontSize: "20px" }} id="resume-button-1" />
+                  <DownloadIcon
+                    style={{ verticalAlign: "middle", fontSize: "20px" }}
+                    id="resume-button-1"
+                  />
                 </a>
               </button>
             </div>

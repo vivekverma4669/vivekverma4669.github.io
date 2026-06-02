@@ -4,9 +4,10 @@
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
-
+  padding: 0 20px;
+  box-sizing: border-box;
 }
-.project-title{ 
+.project-title{
     margin-top: -8px;
     text-align: center;
     color: rgb(0, 85, 160);
@@ -15,55 +16,36 @@
 
 .project-card{
   margin: 10px;
-  width: 45%;
-  /* min-width: 350px; */
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  width: calc(50% - 40px);
+  min-width: 300px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  box-sizing: border-box;
 }
 .project-card  video{
   border-radius: 10px;
   width: 100%;
- 
+  display: block;
 }
 .project-card iframe{
   width: 100%;
   height: 400px;
- 
 }
 .des{
     padding: 20px;
 }
 .link{
-
- display :flex;
+  display: flex;
   justify-content: space-around;
-   margin-top:-30px;
+  margin-top: -30px;
 }
 
-@media screen and (min-width : 0px) and  (max-width : 480px) {
-  .project{
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 20px; */
- 
-   /* display: grid;
-   /* justify-content: center; */
-   /* grid-template-columns: repeat(auto-fill, minmax(4000px, 1fr));  */
-   display: flex;
-   flex-wrap: wrap;
-   width: 100%;
- 
- }
- .project-card{
-  width: 300px;
-  /* margin: 20px; */
-  /* width: 45%; */
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+@media screen and (max-width: 900px) {
+  .project-card {
+    width: calc(100% - 40px);
+    max-width: 600px;
+  }
 }
 
-}  
 
 
 @media screen and (min-width: 200px) and (max-width: 400px){
@@ -241,15 +223,15 @@
 
 
 
-@media  (max-width: 550px) {
-    
+@media (max-width: 550px) {
     .project-card{
-      width: 350px;
+      width: calc(100% - 20px);
+      min-width: unset;
     }
     .con{
-        width: 350px;
+        width: 100%;
     }
-    }
+}
 
     .project-card1{
         display: flex;
@@ -257,11 +239,26 @@
    
     .project-tech-stack{
     display: flex;
-    justify-content: space-around;
-    width: 300px;
-    /* border: 2px solid black; */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    margin: 10px auto;
+    }
 
-    margin: auto;
+.clerk-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #6C47FF;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-radius: 6px;
+    padding: 4px 10px;
+    height: 28px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset;
     }
     .project-tech-stack  :hover{
      border-radius: 10px;

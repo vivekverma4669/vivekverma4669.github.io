@@ -23,7 +23,7 @@ const About = () => {
               </div>
               <div className="about-col-2">
                 <p id="user-detail-intro" style={{ color: theme == 'day' ? null : "white" }}>
-                  I am  passionate and aspiring Full Stack Developer on a journey to transform ideas into seamless digital experiences. Although my professional journey is just beginning, my enthusiasm for creating innovative and efficient solutions knows no bounds.
+                  I am a Full Stack Engineer with ~2 years of professional experience building scalable SaaS products at Galific Solutions. I have shipped production-grade web and mobile applications — including a React Native app live on the Google Play Store — and work across the full stack from polished UIs to robust APIs and cloud deployments.
                 </p>
                 <div className="tab-title" style={{ color: theme == 'day' ? null : "rgb(42, 205, 216)" }}>
                   <p className={`tab-links ${activeTab === 'skills' ? 'active-link' : ''}`} style={{ color: theme == 'day' ? 'black' : null }} onClick={() => openTab('skills')}> Technical Skills</p>
@@ -33,9 +33,9 @@ const About = () => {
 
                 <div className={`tab-contents ${activeTab === 'skills' ? 'active-tab' : ''}`} id="skills">
                   <ul class="aboutSkill">
-                    <li><span style={{ color: theme == 'day' ? null : "#32de84" }}>Frontend Development</span><br /><p style={{ color: theme == 'day' ? "black" : "white" }}><span >HTML5 </span><span >| CSS3 </span> <span >| JavaScript</span> <br></br><span >|React</span><span >|Redux </span> </p></li>
-                    <li><span style={{ color: theme == 'day' ? null : "#32de84" }}>Full Stack Development</span><br /><p style={{ color: theme == 'day' ? "black" : "white" }}><span >HTML5 </span><span >| CSS3 </span> <span >| JavaScript</span> <span >|React </span><br></br><span >|Redux </span> <span >|Mongol DB </span> <span >|Node.js </span></p></li>
-                    <li><span style={{ color: theme == 'day' ? null : "#32de84" }}>Data Structure & Algorithms</span><br /><p style={{ color: theme == 'day' ? "black" : "white" }}><span >Arrays/Strings </span><span >| Stacks/Queues </span><span >| Linked List </span><span >| DP </span> <span >| Back tracking  </span>  <span >| Tree  | binary tree  </span></p></li>
+                    <li><span style={{ color: theme == 'day' ? null : "#32de84" }}>Frontend Development</span><br /><p style={{ color: theme == 'day' ? "black" : "white" }}><span>HTML5 | CSS3 | JavaScript | React | TypeScript | Next.js | Redux | MUI</span></p></li>
+                    <li><span style={{ color: theme == 'day' ? null : "#32de84" }}>Full Stack & Mobile</span><br /><p style={{ color: theme == 'day' ? "black" : "white" }}><span>React Native | Node.js | Express | MongoDB | Redis | Docker</span></p></li>
+                    <li><span style={{ color: theme == 'day' ? null : "#32de84" }}>Data Structures & Algorithms</span><br /><p style={{ color: theme == 'day' ? "black" : "white" }}><span>Arrays | Stacks/Queues | Linked List | Trees | DP | Backtracking</span></p></li>
                   </ul>
                 </div>
 
@@ -48,9 +48,8 @@ const About = () => {
                 </div>
                 <div className={`tab-contents ${activeTab === 'education' ? 'active-tab' : ''}`} id="education">
                   <ul class="aboutSkill">
-                    <li><span style={{ color: theme == 'day' ? null : "#32de84" }}>Full Stack Web Development</span>  <p style={{ color: theme == 'day' ? "black" : "white" }}> <span ><br />Masai School, Bengaluru<br />dec 2022 - Dec 2023</span></p></li>
-                    <li><span style={{ color: theme == 'day' ? null : "#32de84" }}>Graduation (B.Com)</span>  <p style={{ color: theme == 'day' ? "black" : "white" }}> <span ><br />Allahabad State University<br /> Jul 2020 - Aug 2023</span></p></li>
-
+                    <li><span style={{ color: theme == 'day' ? null : "#32de84" }}>Full Stack Web Development</span>  <p style={{ color: theme == 'day' ? "black" : "white" }}> <span ><br />Masai School, Bengaluru<br />Mar 2023 – Mar 2024</span></p></li>
+                    <li><span style={{ color: theme == 'day' ? null : "#32de84" }}>Graduation</span>  <p style={{ color: theme == 'day' ? "black" : "white" }}> <span ><br />University of Allahabad<br />2020 – 2023</span></p></li>
                   </ul>
                 </div>
               </div>

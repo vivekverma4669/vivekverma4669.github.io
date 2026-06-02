@@ -1,70 +1,108 @@
-.stack{
+.techS {
     -webkit-text-stroke: 1px rgb(255, 0, 64);
-    /* color: blue; */
 }
-.container2{
-    margin: 39px;
-    margin-top: 10px;
-   /* display: grid;
-  justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); */
- 
+
+.tech-wrapper {
+    width: 88%;
+    max-width: 1000px;
+    margin: 0 auto 48px;
+    border-radius: 20px;
+    padding: 32px 40px;
+    box-shadow:
+        rgba(0, 0, 0, 0.2) 0px 20px 60px,
+        rgba(0, 0, 0, 0.1) 0px 4px 10px;
+}
+
+.tech-group {
+    display: flex;
+    align-items: flex-start;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(120, 120, 120, 0.13);
+    gap: 24px;
+}
+
+.tech-group:last-child {
+    border-bottom: none;
+    padding-bottom: 4px;
+}
+
+.tech-group-label {
+    min-width: 96px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    padding-top: 9px;
+    flex-shrink: 0;
+}
+
+.tech-chips {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
- 
-   /* i want minimum 2 card per row or maximum according to screen but max width should be 150px only  */
+    gap: 10px;
 }
 
-fieldset{
-    /* padding-top: -50px; */
-    width: 90%;
-    margin: auto;
-    border-radius: 20px;
-    background-color: rgb(228, 236, 237);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
-}
-.card{
-    flex: 1 1 110px; /* Minimum width of 150px, can grow but won't shrink */
-    max-width: 90px; /* Maximum width of 150px */
-    padding: 8px;
-    border-radius: 10px;
-    margin: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    text-align: center;
-}
-.card h3{
-    font-size: 12px;
+.tech-chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 16px;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid;
+    cursor: default;
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s, background-color 0.2s;
+    white-space: nowrap;
+    letter-spacing: 0.2px;
 }
 
-.card {
-    /* border: 1px solid transparent; */
-    transition: border 1s; /* Apply transition to the border property */
-}
-.card:hover {
-    
-    border: 1px solid crimson; 
-    /* background-color: rgb(128, 152, 154); */
-    cursor: pointer; 
-    color: white;
-    box-shadow: rgba(21, 132, 230, 0.25) 0px 50px 100px -20px, rgba(25, 126, 194, 0.3) 0px 30px 60px -30px, rgba(37, 124, 212, 0.35) 0px -2px 6px 0px inset;
-}
-.card h3:hover{
-    color: aliceblue;
+.tech-chip:hover {
+    border-color: crimson !important;
+    box-shadow: 0 0 14px rgba(220, 20, 60, 0.3);
+    transform: translateY(-2px);
 }
 
-.card img,
-.card-icon {
- border-radius: 10px;
- width: 100% !important;
- height: 80px !important;
+.chip-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: inline-block;
 }
 
+@media screen and (max-width: 900px) {
+    .tech-wrapper {
+        width: 92%;
+        padding: 24px 28px;
+    }
+    .tech-group-label {
+        min-width: 80px;
+        font-size: 9.5px;
+    }
+    .tech-chip {
+        font-size: 13px;
+        padding: 6px 13px;
+    }
+}
 
-
-@media screen and (max-width: 520px) {
-    .container2{
-        margin: 0px;
-
+@media screen and (max-width: 600px) {
+    .tech-wrapper {
+        padding: 18px 16px;
+        width: 95%;
+    }
+    .tech-group {
+        flex-direction: column;
+        gap: 10px;
+        padding: 14px 0;
+    }
+    .tech-group-label {
+        padding-top: 0;
+        min-width: unset;
+        font-size: 10px;
+    }
+    .tech-chip {
+        font-size: 13px;
+        padding: 6px 12px;
     }
 }
