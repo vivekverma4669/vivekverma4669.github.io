@@ -190,7 +190,7 @@ const Box1 = () => {
               style={{ backgroundColor: theme == "day" ? null : "green" }}
             >
               <a
-                href="https://drive.google.com/file/d/1X4gGqtbBxB9BfnYgYzL3j6_75O8KzBBQ/view?usp=sharing"
+                href="https://drive.google.com/file/d/1I7xkrbbKzVDDCjZPh2GRZs4frHAkciSe/view?usp=sharing"
                 target="blank"
               >
                 Resume{" "}
