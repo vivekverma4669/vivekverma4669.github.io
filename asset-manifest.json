@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.293a1560.css",
-    "main.js": "/static/js/main.9ac523a3.js",
+    "main.js": "/static/js/main.d51a02bd.js",
     "static/js/787.6595d10f.chunk.js": "/static/js/787.6595d10f.chunk.js",
     "static/media/elevate-crm.mp4": "/static/media/elevate-crm.67a2c7a2e1d171ead388.mp4",
     "static/media/hiremind.mp4": "/static/media/hiremind.d82f9a77640cb5781b94.mp4",
@@ -14,11 +14,11 @@
     "index.html": "/index.html",
     "static/media/Moon.svg": "/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
     "main.293a1560.css.map": "/static/css/main.293a1560.css.map",
-    "main.9ac523a3.js.map": "/static/js/main.9ac523a3.js.map",
+    "main.d51a02bd.js.map": "/static/js/main.d51a02bd.js.map",
     "787.6595d10f.chunk.js.map": "/static/js/787.6595d10f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.293a1560.css",
-    "static/js/main.9ac523a3.js"
+    "static/js/main.d51a02bd.js"
   ]
 }
