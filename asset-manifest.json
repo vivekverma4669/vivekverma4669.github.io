@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.293a1560.css",
-    "main.js": "/static/js/main.d51a02bd.js",
+    "main.js": "/static/js/main.2833bfdc.js",
     "static/js/787.6595d10f.chunk.js": "/static/js/787.6595d10f.chunk.js",
     "static/media/elevate-crm.mp4": "/static/media/elevate-crm.67a2c7a2e1d171ead388.mp4",
     "static/media/hiremind.mp4": "/static/media/hiremind.d82f9a77640cb5781b94.mp4",
     "static/media/Electron.mp4": "/static/media/Electron.f650897de55a4f26cf7d.mp4",
     "static/media/Leo.mp4": "/static/media/Leo.c93d7bc003cb649923c3.mp4",
     "static/media/hero.png": "/static/media/hero.5f0d64f19f1f6d002522.png",
-    "static/media/Vivek-Verma-Resume.pdf": "/static/media/Vivek-Verma-Resume.5e46628fd3b09e3eee65.pdf",
+    "static/media/Vivek-Verma-Resume.pdf": "/static/media/Vivek-Verma-Resume.90be6510dd4924928684.pdf",
     "static/media/vivek.jpg": "/static/media/vivek.13e918cc7b89bf3b1890.jpg",
     "static/media/Sun.svg": "/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
     "index.html": "/index.html",
     "static/media/Moon.svg": "/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
     "main.293a1560.css.map": "/static/css/main.293a1560.css.map",
-    "main.d51a02bd.js.map": "/static/js/main.d51a02bd.js.map",
+    "main.2833bfdc.js.map": "/static/js/main.2833bfdc.js.map",
     "787.6595d10f.chunk.js.map": "/static/js/787.6595d10f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.293a1560.css",
-    "static/js/main.d51a02bd.js"
+    "static/js/main.2833bfdc.js"
   ]
 }
