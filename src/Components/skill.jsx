@@ -54,11 +54,23 @@ const SkillsSection = () => {
 
 
       
-      {/* <div>
-        <i className="fa-solid fa-face-smile"></i>
-        <h2>Communication Effectiveness</h2>
+      <div className='skills-card'>
+        <img className="skills-card-img" src='' alt=''></img>
+        <h2 className="skills-card-name">Communication</h2>
         <p>Effective communication is the process of exchanging ideas, thoughts, opinions, knowledge, and data so that the message is received and understood with clarity and purpose. When we communicate effectively, both the sender and receiver feel satisfied.</p>
-      </div> */}
+      </div>
+
+      <div className='skills-card'>
+        <img className="skills-card-img" src='' alt=''></img>
+        <h2 className="skills-card-name">Problem Solving</h2>
+        <p>Strong analytical mindset with the ability to break down complex problems into manageable steps. Comfortable debugging tricky issues, researching solutions, and applying logical thinking to deliver effective outcomes under pressure.</p>
+      </div>
+
+      <div className='skills-card'>
+        <img className="skills-card-img" src='' alt=''></img>
+        <h2 className="skills-card-name">Team Collaboration</h2>
+        <p>Experienced in working within cross-functional teams — contributing ideas, reviewing peers' code, and coordinating across frontend, backend, and design to ship features efficiently. Comfortable with both remote and in-person workflows.</p>
+      </div>
     </div>
   </div>
   

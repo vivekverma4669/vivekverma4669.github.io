@@ -69,7 +69,7 @@ const Project = () => {
                 style={{ color: theme === "day" ? "" : "whitesmoke" }}
                 className="project-deployed-link"
                 href="https://elevate-crm-sigma.vercel.app/login"
-                target="blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 <h2>🌐 Preview</h2>
               </a>
@@ -77,7 +77,7 @@ const Project = () => {
                 style={{ color: theme === "day" ? "" : "whitesmoke" }}
                 className="project-github-link"
                 href="https://github.com/vivekverma4669/ElevateCRM"
-                target="blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 <h2>
                   <FaGithub
@@ -162,7 +162,7 @@ const Project = () => {
                 style={{ color: theme === "day" ? "" : "whitesmoke" }}
                 className="project-deployed-link"
                 href="https://hiremind-gamma.vercel.app/dashboard"
-                target="blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 <h2>🌐 Preview</h2>
               </a>
@@ -170,7 +170,7 @@ const Project = () => {
                 style={{ color: theme === "day" ? "" : "whitesmoke" }}
                 className="project-github-link"
                 href="https://github.com/vivekverma4669/hiremind"
-                target="blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 <h2>
                   <FaGithub
@@ -254,7 +254,7 @@ const Project = () => {
                 style={{ color: theme === "day" ? "" : "whitesmoke" }}
                 className="project-deployed-link"
                 href="https://leo-bliggers.vercel.app/"
-                target="blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 <h2>🌐 preview</h2>
               </a>
@@ -262,7 +262,7 @@ const Project = () => {
                 style={{ color: theme === "day" ? "" : "whitesmoke" }}
                 className="project-github-link"
                 href="https://github.com/vivekverma4669/blog-app"
-                target="blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 <h2>
                   <FaGithub
@@ -337,7 +337,7 @@ const Project = () => {
                 style={{ color: theme === "day" ? "" : "whitesmoke" }}
                 className="project-deployed-link"
                 href="https://64dcee8acb8ee428e7b63db9--charming-bienenstitch-d89c77.netlify.app/"
-                target="blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 <h2>🌐 preview</h2>
               </a>
@@ -345,7 +345,7 @@ const Project = () => {
                 style={{ color: theme === "day" ? "" : "whitesmoke" }}
                 className="project-github-link"
                 href="https://github.com/RajshreeJaiswal/Electron-ecommerce-website"
-                target="blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 <h2>
                   <FaGithub

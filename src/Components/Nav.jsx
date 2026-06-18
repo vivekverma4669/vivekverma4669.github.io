@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import DarkMode from './DarkMode/DarkMode';
 import { AuthTheme } from "../AuthThemeProvider";
+import ResumeFile from "./Videos/Vivek-Verma-Resume.pdf";
 
  const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,7 +28,7 @@ import { AuthTheme } from "../AuthThemeProvider";
         <li className="tdn"><a style={{color : theme=='day'? null :'white'}} href='#projects' className="nav-link projects">Project</a></li>
         <li className="tdn"><a style={{color : theme=='day'? null :'white'}} href="#skill" className="nav-link">My Skills</a></li>
         <li className="tdn"><a style={{color : theme=='day'? null :'white'}} href="#contact" className="nav-link contact">Contact</a></li>
-        <li className="tdn"><a style={{color : theme=='day'? null :'white'}} href="#home" className="nav-link resume">Resume</a></li>
+        <li className="tdn"><a style={{color : theme=='day'? null :'white'}} href={ResumeFile} target="_blank" rel="noopener noreferrer" className="nav-link resume">Resume</a></li>
       </ul>
 
       
