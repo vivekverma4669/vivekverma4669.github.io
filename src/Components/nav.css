@@ -7,7 +7,7 @@
 
 nav {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  z-index: 1;
+  z-index: 500;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,6 +17,25 @@ nav {
   top: 0;
   padding: -10px;
   margin-bottom: -60px;
+  transform: translateY(0);
+  transition: transform 0.35s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+nav.nav-hidden {
+  transform: translateY(-100%);
+}
+
+nav.nav-scrolled {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset,
+    0 6px 18px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  nav {
+    transition: none;
+  }
 }
 
 nav .title {

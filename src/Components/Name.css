@@ -90,12 +90,43 @@
     color: rgb(0, 85, 169);
 }
 
-@media screen and (min-width: 0px )and (max-device-width: 768px){
+@media screen and (max-width: 768px){
     .box112{
         background-color: #001C55;
         display: none;
     }
     .box11{
-        width: 80%;
+        width: 90%;
+        margin: 30px auto 0;
+    }
+    .box111{
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .wlcm_note,
+    .some_about{
+        margin-left: 0 !important;
+    }
+  }
+
+@media screen and (max-width: 480px){
+    .box10{
+        font-size: 26px;
+    }
+    .wlcm_note{
+        font-size: 26px;
+    }
+    .btn_div{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 90%;
+    }
+    .rbtn{
+        margin-left: 0 !important;
+        margin: 0 !important;
+        width: 100%;
+        box-sizing: border-box;
     }
   }

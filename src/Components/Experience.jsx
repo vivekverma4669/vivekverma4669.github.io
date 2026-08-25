@@ -18,6 +18,7 @@ const Experience = () => {
   return (
     <div
       id="experience"
+      className="reveal"
       style={{
         backgroundColor: theme === "day" ? null : "rgb(16, 22,34)",
         padding: "20px 0 20px",

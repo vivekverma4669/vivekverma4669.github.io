@@ -4,10 +4,11 @@ import Hiremind from "./Videos/hiremind.mp4";
 import Elevate from "./Videos/elevate-crm.mp4";
 import Elogo from "./Videos/eLogo.jpg";
 import Leo from "./Videos/Leo.mp4";
+import Doctat from "./Videos/doctat.mp4";
+import Fitdesk from "./Videos/fitdesk.mp4";
 import { useContext } from "react";
 import { AuthTheme } from "../AuthThemeProvider";
 import { FaGithub } from "react-icons/fa";
-import PersonIcon from "@mui/icons-material/Person";
 import GroupIcon from "@mui/icons-material/Group";
 import {
   SiReact,
@@ -23,6 +24,7 @@ import {
   SiNodedotjs,
   SiDocker,
   SiRedis,
+  SiMui,
 } from "react-icons/si";
 
 const Project = () => {
@@ -52,9 +54,142 @@ const Project = () => {
       </h1>
 
       <div className="project">
+        {/* Fitdesk */}
+        <div
+          className="project-card reveal"
+          style={{ backgroundColor: cardBg, borderRadius: "10px" }}
+        >
+          <video loop autoPlay muted controls>
+            <source src={Fitdesk} type="video/mp4" />
+          </video>
+          <div className="des">
+            <div
+              className="link"
+              style={{ color: theme === "day" ? "" : "silver" }}
+            >
+              <a
+                style={{ color: theme === "day" ? "" : "whitesmoke" }}
+                className="project-deployed-link"
+                href="https://frontend-vert-seven-15.vercel.app/"
+                target="_blank" rel="noopener noreferrer"
+              >
+                <h2>🌐 Preview</h2>
+              </a>
+              <span className="private-repo-note">🔒 Private repo</span>
+            </div>
+            <h2
+              className="project-title"
+              style={{
+                color: theme === "day" ? "" : "limegreen",
+                display: "flex",
+                width: "fit-content",
+                margin: "auto",
+              }}
+            >
+              Fitdesk
+            </h2>
+            <h4
+              style={{
+                color: theme === "day" ? "rgb(0, 85, 160)" : "limegreen",
+              }}
+              className="project-description"
+            >
+              The smart operating system for modern gyms — end-to-end
+              platform covering member management, scheduling, billing, and
+              staff operations. Built solo, front-end to back-end.
+            </h4>
+            <div className="project-tech-stack">
+              <SiReact size={28} color="#61DAFB" />
+              <SiTypescript size={28} color="#3178C6" />
+              <SiNodedotjs size={28} color="#339933" />
+              <SiExpress size={28} color={ghColor} />
+              <SiMongodb size={28} color="#47A248" />
+            </div>
+          </div>
+        </div>
+
+        {/* Doctat */}
+        <div
+          className="project-card reveal"
+          style={{ backgroundColor: cardBg, borderRadius: "10px" }}
+        >
+          <video loop autoPlay muted controls>
+            <source src={Doctat} type="video/mp4" />
+          </video>
+          <div className="des">
+            <div
+              className="link"
+              style={{ color: theme === "day" ? "" : "silver" }}
+            >
+              <a
+                style={{ color: theme === "day" ? "" : "whitesmoke" }}
+                className="project-deployed-link"
+                href="https://doctat.com/"
+                target="_blank" rel="noopener noreferrer"
+              >
+                <h2>🌐 Preview</h2>
+              </a>
+              <span className="private-repo-note">🔒 Private repo</span>
+            </div>
+            <h2
+              className="project-title"
+              style={{
+                color: theme === "day" ? "" : "limegreen",
+                display: "flex",
+                width: "fit-content",
+                margin: "auto",
+              }}
+            >
+              Doctat
+            </h2>
+            <h4
+              style={{
+                color: theme === "day" ? "rgb(0, 85, 160)" : "limegreen",
+              }}
+              className="project-description"
+            >
+              A healthcare platform built with a team — owned the entire
+              front-end: API integration, Redux state management, and MUI-based
+              UI.
+            </h4>
+            <div className="project-tech-stack">
+              <SiReact size={28} color="#61DAFB" />
+              <SiTypescript size={28} color="#3178C6" />
+              <SiRedux size={28} color="#764ABC" />
+              <SiMui size={28} color="#007FFF" />
+              <SiCss size={28} color="#1572B6" />
+            </div>
+            <h3>
+              <u style={{ color: theme === "day" ? "" : "whitesmoke" }}>
+                My role
+              </u>
+              :{" "}
+              <span
+                style={{
+                  color: theme === "day" ? "rgb(0, 85, 160)" : "limegreen",
+                }}
+              >
+                Frontend Developer
+              </span>
+            </h3>
+            <h3>
+              <span
+                style={{
+                  color: theme === "day" ? "rgb(0, 85, 160)" : "limegreen",
+                }}
+              >
+                Team Project{" "}
+                <GroupIcon
+                  style={{ verticalAlign: "middle", fontSize: "22px" }}
+                />
+              </span>
+            </h3>
+          </div>
+        </div>
+
         {/* ElevateCRM */}
         <div
-          className="project-card"
+          className="project-card reveal"
           style={{ backgroundColor: cardBg, borderRadius: "10px" }}
         >
           <video loop autoPlay muted controls>
@@ -124,30 +259,12 @@ const Project = () => {
                 Groq AI
               </span>
             </div>
-            <h2
-              style={{
-                textAlign: "center",
-                fontSize: "14px",
-                marginTop: "10px",
-              }}
-            >
-              <span
-                style={{
-                  color: theme === "day" ? "rgb(0, 85, 160)" : "limegreen",
-                }}
-              >
-                Personal Project{" "}
-                <PersonIcon
-                  style={{ verticalAlign: "middle", fontSize: "18px" }}
-                />
-              </span>
-            </h2>
           </div>
         </div>
 
         {/* Hiremind */}
         <div
-          className="project-card"
+          className="project-card reveal"
           style={{ backgroundColor: cardBg, borderRadius: "10px" }}
         >
           <video loop autoPlay muted controls>
@@ -216,30 +333,12 @@ const Project = () => {
               </span>
               <span className="clerk-badge">Clerk</span>
             </div>
-            <h2
-              style={{
-                textAlign: "center",
-                fontSize: "14px",
-                marginTop: "10px",
-              }}
-            >
-              <span
-                style={{
-                  color: theme === "day" ? "rgb(0, 85, 160)" : "limegreen",
-                }}
-              >
-                Personal Project{" "}
-                <PersonIcon
-                  style={{ verticalAlign: "middle", fontSize: "18px" }}
-                />
-              </span>
-            </h2>
           </div>
         </div>
 
         {/* Leo Bloggers */}
         <div
-          className="project-card"
+          className="project-card reveal"
           style={{ backgroundColor: cardBg, borderRadius: "10px" }}
         >
           <video loop autoPlay controls>
@@ -302,30 +401,12 @@ const Project = () => {
               <SiExpress size={28} color={ghColor} />
               <SiCss size={28} color="#1572B6" />
             </div>
-            <h2
-              style={{
-                textAlign: "center",
-                fontSize: "14px",
-                marginTop: "10px",
-              }}
-            >
-              <span
-                style={{
-                  color: theme === "day" ? "rgb(0, 85, 160)" : "limegreen",
-                }}
-              >
-                Personal Project{" "}
-                <PersonIcon
-                  style={{ verticalAlign: "middle", fontSize: "18px" }}
-                />
-              </span>
-            </h2>
           </div>
         </div>
 
         {/* Electron */}
         <div
-          className="project-card"
+          className="project-card reveal"
           style={{ backgroundColor: cardBg, borderRadius: "10px" }}
         >
           <video loop autoPlay controls>

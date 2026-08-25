@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./nav.css";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
@@ -8,11 +8,33 @@ import ResumeFile from "./Videos/Vivek-Verma-Resume.pdf";
 
  const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const lastScrollY = useRef(0);
   const {theme} = useContext(AuthTheme);
 
-   
-  return ( 
-    <nav  style={{backgroundColor:  theme=='day'? "" :'#141718'}}>
+  useEffect(() => {
+    const onScroll = () => {
+      const currentY = window.scrollY;
+      setScrolled(currentY > 20);
+
+      if (menuOpen) {
+        setHidden(false);
+      } else if (currentY > lastScrollY.current && currentY > 120) {
+        setHidden(true);
+      } else if (currentY < lastScrollY.current) {
+        setHidden(false);
+      }
+      lastScrollY.current = currentY;
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [menuOpen]);
+
+  return (
+    <nav
+      className={`${hidden ? "nav-hidden" : ""} ${scrolled ? "nav-scrolled" : ""}`}
+      style={{backgroundColor:  theme=='day'? "" :'#141718'}}>
      
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>

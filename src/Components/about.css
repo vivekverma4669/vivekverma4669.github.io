@@ -44,12 +44,15 @@ body{
     max-width: 80%;
     min-height: 350px;
     min-width: 350px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-   
+
 }
 .about-col-2{
     flex-basis: 70%;
+    min-width: 0;
 }
 .about-col-2>p{
     font-size: 22px;
@@ -113,7 +116,7 @@ body{
 
 .aboutSkill{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(310px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(min(310px, 100%),1fr));
     padding-left: 0;
     margin: 0;
 }
@@ -242,13 +245,6 @@ body{
 
 }
 
-.arrup{
-    position: fixed; 
-    bottom: 20px; 
-    right: 30px; 
-    color: #72351C;
-}
-
 @media screen and (min-width: 521px) and (max-width: 730px){
 
     .box10>span{
@@ -300,11 +296,26 @@ body{
 .about-col-2{
     font-size: 14px;
 }
+.tab-title{
+    flex-wrap: wrap;
+    row-gap: 8px;
+}
 .tab-links{
     font-size: 16px;
     margin-right: 20px;
 }
 
+}
+
+@media only screen and (max-width: 420px){
+.about-col-1 img{
+    min-width: 0;
+    min-height: 0;
+    width: 80vw;
+    height: 80vw;
+    max-width: 280px;
+    max-height: 280px;
+}
 }
 
 

@@ -58,13 +58,25 @@
 
 }
 
+.github_stat img{
+  max-width: 100%;
+  height: auto;
+}
+
+.react-activity-calendar{
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
 
 @media screen and  (max-width: 510px) {
-    
+
 .github_stat *{
   width: 350px;
+  max-width: 100%;
 }
 .con{
     width: 350px;
+    max-width: 100%;
 }
 }

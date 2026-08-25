@@ -7,13 +7,19 @@ import Tech from './Components/Tech';
 import Project from './Components/project';
 import SkillsSection from './Components/skill';
 import Contact from './Components/contact';
+import ScrollProgress from './Components/ScrollProgress';
+import ScrollToTop from './Components/ScrollToTop';
 import AuthThemeProvider from './AuthThemeProvider';
 import { BrowserRouter } from 'react-router-dom';
+import useScrollReveal from './useScrollReveal';
 
 function App() {
+  useScrollReveal();
+
   return (
     <BrowserRouter>
       <AuthThemeProvider>
+        <ScrollProgress />
         <NavBar />
         <Name />
         <About />
@@ -22,6 +28,7 @@ function App() {
         <Project />
         <SkillsSection />
         <Contact />
+        <ScrollToTop />
       </AuthThemeProvider>
     </BrowserRouter>
   );

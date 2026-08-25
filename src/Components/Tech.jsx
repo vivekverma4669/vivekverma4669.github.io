@@ -61,7 +61,7 @@ const Tech = () => {
         Tech Stack
       </h1>
 
-      <div className="tech-wrapper" style={{ backgroundColor: wrapperBg }}>
+      <div className="tech-wrapper reveal" style={{ backgroundColor: wrapperBg }}>
 
         <Group label="Frontend">
           <Chip icon={SiHtml5} color="#E34F26" label="HTML5" />
